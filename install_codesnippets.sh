@@ -1,10 +1,10 @@
 #!/bin/sh
 
-debug=NO
+debug=flase
 
 # Xcode 下代码片段的路径
 xcode_codesnippets_path="$HOME/Library/Developer/Xcode/UserData/CodeSnippets"
-if [ $debug ];then
+if [ $debug == true ];then
     xcode_codesnippets_path="$HOME/Desktop/CodeSnippets"
 fi
 echo "\n准备为您安装 CodeSnippets，路径为：${xcode_codesnippets_path}"
@@ -14,7 +14,7 @@ if [ -d $xcode_codesnippets_path ];then
 
     # 当前时间
     current_datetime="`date +%Y%m%d%H%M%s`"
-    if [ $debug ];then
+    if [ $debug == true ];then
         echo "当前时间：$current_datetime"
     fi
 
