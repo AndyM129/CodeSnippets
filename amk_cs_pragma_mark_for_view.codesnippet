@@ -37,7 +37,7 @@
 
 #pragma mark - KVO
 
-#pragma mark - Delegate
+#pragma mark - Protocol
 
 #pragma mark - Override
 
