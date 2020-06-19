@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_weak_self</string>
+	<string>amk_cs_property_strong_readwrite</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof__(self)weakSelf = self;</string>
+	<string>@property(nonatomic, strong, nullable, readwrite) &lt;#UIView#&gt; *&lt;#view#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0B14C34D-9378-4A66-BAB5-0B25E79374DE</string>
+	<string>EE20813B-E717-4964-A0D6-B1B1EBBC3B08</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: weakSelf
-</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

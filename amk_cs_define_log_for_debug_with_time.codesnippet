@@ -31,8 +31,7 @@ static NSString *_AMKLogTimeStringWithDate(NSDate *date) {
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>define: debug log with time
-</string>
+	<string>define: debug log with time</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

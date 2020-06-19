@@ -10,7 +10,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&amp;*weakSelf)strongSelf = weakSelf;</string>
+	<string>__strong __typeof__(weakSelf)strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>43895C69-D786-4F60-92A6-92A496FA9704</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_weak_self</string>
+	<string>amk_cs_action_without_sender</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof__(self)weakSelf = self;</string>
+	<string>- (void)&lt;#action#&gt; {
+    NSLog(@"");
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0B14C34D-9378-4A66-BAB5-0B25E79374DE</string>
+	<string>A93C3D9D-759C-434C-9B37-C8EEB4D5CFEF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: weakSelf
-</string>
+	<string>NSObject: 通用方法 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

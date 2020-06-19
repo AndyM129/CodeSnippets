@@ -25,6 +25,8 @@
 
 #pragma mark - Properties
 
+#pragma mark - Data &amp; Networking
+
 #pragma mark - Public Methods
 
 #pragma mark - Private Methods
@@ -33,11 +35,9 @@
 
 #pragma mark - KVO
 
-#pragma mark - Delegate
+#pragma mark - Protocol
 
 #pragma mark - Override
-
-#pragma mark - Networking
 
 #pragma mark - Helper Methods
 

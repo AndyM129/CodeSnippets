@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_weak_self</string>
+	<string>amk_cs_shape_layer_mask_by_rounding_corners</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof__(self)weakSelf = self;</string>
+	<string>CAShapeLayer *maskLayer = [CAShapeLayer layer];
+        maskLayer.frame = self.bounds;
+        maskLayer.path = [UIBezierPath bezierPathWithRoundedRect:maskLayer.frame byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(12, 12)].CGPath;
+        self.layer.mask = maskLayer;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0B14C34D-9378-4A66-BAB5-0B25E79374DE</string>
+	<string>4D52519F-9227-4461-AD5B-DD3032AED0AC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: weakSelf
-</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
