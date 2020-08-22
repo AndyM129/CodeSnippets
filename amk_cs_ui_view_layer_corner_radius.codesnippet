@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_table_view_property</string>
+	<string>amk_cs_ui_view_layer_corner_radius</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong, nullable) UITableView *tableView;
-</string>
+	<string>&lt;#view#&gt;.layer.cornerRadius = 5;
+&lt;#view#&gt;.layer.masksToBounds = YES;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C06F4289-70B7-401A-BBBD-18A0AEC48F7E</string>
+	<string>9A341F59-E03D-4BB9-A78A-5F108AD3C6A4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView: 属性声明</string>
+	<string>UIView: 设置圆角</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

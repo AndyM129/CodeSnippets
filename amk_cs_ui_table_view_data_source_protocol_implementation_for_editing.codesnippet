@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_table_view_data_source_protocol_implementation_for_editing</string>
+	<string>amk_cs_ui_table_view_data_source_protocol_implementation_for_editing</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>

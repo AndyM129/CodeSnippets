@@ -3,26 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_shape_layer_mask</string>
+	<string>amk_cs_ui_table_view_property</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>CAShapeLayer *maskLayer = [CAShapeLayer layer];
-maskLayer.frame = self.bounds;
-maskLayer.path = [UIBezierPath bezierPathWithRoundedRect:maskLayer.frame cornerRadius:12].CGPath;
-self.layer.mask = maskLayer;
+	<string>@property(nonatomic, strong, nullable) UITableView *tableView;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F451CA52-2D39-4055-9D5F-DCED4B4D83D8</string>
+	<string>C06F4289-70B7-401A-BBBD-18A0AEC48F7E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CAShapeLayer: 圆角遮罩</string>
+	<string>UITableView: 属性声明</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

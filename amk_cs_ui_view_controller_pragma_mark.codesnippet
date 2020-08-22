@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_controller_pragma_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Dealloc
+
+- (void)dealloc {
+    
+}
+
+#pragma mark - Init Methods
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.title = NSStringFromClass(self.class);
+    }
+    return self;
+}
+
+#pragma mark - Life Circle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = self.view.backgroundColor?:[UIColor whiteColor];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+}
+
+#pragma mark - Properties
+
+#pragma mark - Data &amp; Networking
+
+#pragma mark - Layout Subviews
+
+#pragma mark - Public Methods
+
+#pragma mark - Private Methods
+
+#pragma mark - Notifications
+
+#pragma mark - KVO
+
+#pragma mark - Protocol
+
+#pragma mark - Override
+
+#pragma mark - Helper Methods
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FD93911-471A-4FE6-8AC6-4C7B900602AE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIViewController: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

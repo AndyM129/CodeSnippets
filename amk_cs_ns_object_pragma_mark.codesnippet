@@ -3,57 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_pragma_mark_for_view_controller</string>
+	<string>amk_cs_ns_object_pragma_mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Dealloc
+	<string>#pragma mark - Init Methods
 
 - (void)dealloc {
     
 }
 
-#pragma mark - Init Methods
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        self.title = NSStringFromClass(self.class);
+- (instancetype)init {
+    if (self = [super init]) {
+        
     }
     return self;
-}
-
-#pragma mark - Life Circle
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = self.view.backgroundColor?:[UIColor whiteColor];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
 }
 
 #pragma mark - Properties
 
 #pragma mark - Data &amp; Networking
-
-#pragma mark - Layout Subviews
 
 #pragma mark - Public Methods
 
@@ -71,13 +43,13 @@
 
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7FD93911-471A-4FE6-8AC6-4C7B900602AE</string>
+	<string>A4CE10C7-6A31-49E3-9469-16757468A000</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIViewController: 代码框架</string>
+	<string>NSObject: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

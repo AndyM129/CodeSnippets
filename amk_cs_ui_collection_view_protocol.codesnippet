@@ -3,29 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_table_view_data_source_protocol_implementation_for_index</string>
+	<string>amk_cs_ui_collection_view_protocol</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (nullable NSArray&lt;NSString *&gt; *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return @[@"A", @"B", @"C", @"D", @"E", @"F", @"G"];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-    if (index &gt;= [self sectionIndexTitlesForTableView:tableView].count) return NSNotFound;
-    return index;
-}</string>
+	<string>UICollectionViewDelegateFlowLayout, UICollectionViewDataSource</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D6A7E35D-4508-434C-A11C-449E37B7DBFA</string>
+	<string>CFF9C4DD-5AE1-46ED-A560-207FBF36D3CA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView: 数据源协议实现 - 索引相关
-</string>
+	<string>UICollectionView: 遵守协议</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_table_view_delegate_protocol_implementation</string>
+	<string>amk_cs_ui_table_view_data_source_protocol_implementation_for_index</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark UITableViewDelegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+	<string>- (nullable NSArray&lt;NSString *&gt; *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return @[@"A", @"B", @"C", @"D", @"E", @"F", @"G"];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    if (index &gt;= [self sectionIndexTitlesForTableView:tableView].count) return NSNotFound;
+    return index;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A08A277-4A60-4925-808E-0AAACF4FE2D0</string>
+	<string>D6A7E35D-4508-434C-A11C-449E37B7DBFA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView: 代理协议实现
+	<string>UITableView: 数据源协议实现 - 索引相关
 </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>

@@ -3,24 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_table_view_protocol</string>
+	<string>amk_cs_ui_view_layer_shadow</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UITableViewDataSource, UITableViewDelegate</string>
+	<string>&lt;#view#&gt;.layer.shadowColor = UIColor.blackColor.CGColor;
+&lt;#view#&gt;.layer.shadowRadius = 3;
+&lt;#view#&gt;.layer.shadowOffset = CGSizeMake(0.f, 0.f);
+&lt;#view#&gt;.layer.shadowOpacity = 0.2;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>847471AC-6895-41A4-ADEC-D567D7AA11C7</string>
+	<string>06FFD35E-2396-4FD8-99FA-D64AB9DF788C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView: 遵守协议</string>
+	<string>UIVIew: 设置阴影</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

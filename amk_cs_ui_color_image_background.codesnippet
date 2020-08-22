@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_collection_view_protocol</string>
+	<string>amk_cs_ui_color_image_background</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UICollectionViewDelegateFlowLayout, UICollectionViewDataSource</string>
+	<string>[UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CFF9C4DD-5AE1-46ED-A560-207FBF36D3CA</string>
+	<string>1D95AE07-AB88-4ABF-8D6E-2A0A05A5B699</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView: 遵守协议</string>
+	<string>UIColor: 图像的默认背景色</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

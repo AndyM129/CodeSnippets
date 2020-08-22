@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_image_view_alloc_init</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#imageView#&gt; = [UIImageView.alloc init];
+&lt;#imageView#&gt;.layer.cornerRadius = 9;
+&lt;#imageView#&gt;.layer.masksToBounds = YES;
+&lt;#imageView#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+&lt;#imageView#&gt;.backgroundColor = [UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];
+[self addSubview:&lt;#imageView#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FCFB2B11-A94C-43B3-AE7A-440AD83662F1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIImageView: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
