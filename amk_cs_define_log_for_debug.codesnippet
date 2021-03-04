@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#import &lt;Foundation/Foundation.h&gt;
 #ifndef __OPTIMIZE__
-#   define NSLog(FORMAT, ...) fprintf(stderr,"%s Line %d: %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#   define NSLog(FORMAT, ...) fprintf(stderr,"%s Line %d: %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
 #else
 #   define NSLog(...) {}
 #endif

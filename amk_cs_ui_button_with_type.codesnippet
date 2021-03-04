@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_button_with_type</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.font = [UIFont systemFontOfSize:14];
+        [button setTitle:@"Normal" forState:UIControlStateNormal];
+        [button setTitle:@"Selected" forState:UIControlStateSelected];
+        [button setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+        [button setImage:[UIImage imageNamed:@""] forState:UIControlStateSelected];
+        [button setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:button];
+        
+        // - (void)didClickButton:(id)sender {
+        //     NSLog(@"");
+        // }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>922CBBD6-CA6C-46C9-8487-8BD31F122537</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIBUtton: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

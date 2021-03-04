@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong, nullable, readwrite) &lt;#UIView#&gt; *&lt;#view#&gt;;</string>
+	<string>@property(nonatomic, strong, readwrite, nullable) &lt;#UIView#&gt; *&lt;#view#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>EE20813B-E717-4964-A0D6-B1B1EBBC3B08</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>NSObject: @property(nonatomic, strong, readwrite, nullable)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

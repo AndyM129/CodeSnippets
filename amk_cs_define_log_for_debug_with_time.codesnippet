@@ -20,7 +20,7 @@ static NSString *_AMKLogTimeStringWithDate(NSDate *date) {
     });
     return [dateFormatter stringFromDate:date];
 }
-#define NSLog(FORMAT, ...) fprintf(stderr,"%s %s Line %d: %s\n", _AMKLogTimeStringWithDate(NSDate.date).UTF8String, __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s %s Line %d: %s\n", _AMKLogTimeStringWithDate(NSDate.date).UTF8String, __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
 #else
 #define NSLog(...) {}
 #endif</string>
