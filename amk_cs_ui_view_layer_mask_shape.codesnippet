@@ -6,8 +6,7 @@
 	<string>amk_cs_ui_view_layer_mask_shape</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>CAShapeLayer *layerMask = [CAShapeLayer layer];

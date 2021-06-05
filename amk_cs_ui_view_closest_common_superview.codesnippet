@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_closest_common_superview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface UIView (ClosestCommonSuperview)
+
+- (instancetype)closestCommonSuperview:(UIView *)view;
+
+- (instancetype)closestCommonSuperviewOfViews:(NSArray&lt;UIView*&gt; *)views;
+
+@end
+
+@implementation UIView (ClosestCommonSuperview)
+
+/// 最近的共同父视图
+/// 参考 https://github.com/SnapKit/Masonry/blob/8bd77ea92bbe995e14c454f821200b222e5a8804/Masonry/View%2BMASAdditions.m#L189-L203
+- (instancetype)closestCommonSuperview:(UIView *)view {
+    UIView *closestCommonSuperview = nil;
+
+    UIView *secondViewSuperview = view;
+    while (!closestCommonSuperview &amp;&amp; secondViewSuperview) {
+        UIView *firstViewSuperview = self;
+        while (!closestCommonSuperview &amp;&amp; firstViewSuperview) {
+            if (secondViewSuperview == firstViewSuperview) {
+                closestCommonSuperview = secondViewSuperview;
+            }
+            firstViewSuperview = firstViewSuperview.superview;
+        }
+        secondViewSuperview = secondViewSuperview.superview;
+    }
+    return closestCommonSuperview;
+}
+
+- (UIView *)closestCommonSuperviewOfViews:(NSArray&lt;UIView*&gt; *)views {
+    UIView *commonSuperview = nil;
+    UIView *previousView = nil;
+    for (id object in views) {
+        if ([object isKindOfClass:[UIView class]]) {
+            UIView *view = (UIView *)object;
+            if (previousView) {
+                commonSuperview = [view closestCommonSuperview:commonSuperview];
+            } else {
+                commonSuperview = view;
+            }
+            previousView = view;
+        }
+    }
+    NSAssert(commonSuperview, @"Make sure that all the views in this array have been added into the same view hierarchy.");
+    return commonSuperview;
+}
+
+@end
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>734897C6-584D-4EC1-8491-0F9D64B18301</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIView: 最近的共同父视图</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

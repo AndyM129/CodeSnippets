@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_color_image_bg</string>
+	<string>amk_cs_ns_assert_invoke_abstract_class_method</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];</string>
+	<string>NSAssert(![self isMemberOfClass:&lt;#AbstractClassName#&gt;.class], @"&lt;#AbstractClassName#&gt; is an abstract class, you should not instantiate it directly.");</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1D95AE07-AB88-4ABF-8D6E-2A0A05A5B699</string>
+	<string>8E544F50-739E-4855-9794-1F587228016F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIColor: 图像的默认背景色</string>
+	<string>NSAssert: 禁止直接使用抽象类的方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

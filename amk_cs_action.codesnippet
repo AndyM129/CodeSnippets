@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_color_image_bg</string>
+	<string>amk_cs_action</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];</string>
+	<string>- (void)&lt;#action#&gt; {
+    NSLog(@"");
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1D95AE07-AB88-4ABF-8D6E-2A0A05A5B699</string>
+	<string>A93C3D9D-759C-434C-9B37-C8EEB4D5CFEF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIColor: 图像的默认背景色</string>
+	<string>NSObject: 通用方法 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

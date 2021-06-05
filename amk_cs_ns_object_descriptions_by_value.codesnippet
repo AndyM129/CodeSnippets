@@ -3,21 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_color_image_bg</string>
+	<string>amk_cs_ns_object_descriptions_by_value</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];</string>
+	<string>+ (NSDictionary *)xxxDescriptionsByValue {
+    static dispatch_once_t once;
+    static NSDictionary *descriptionMap;
+    dispatch_once(&amp;once, ^{
+        descriptionMap = @{
+            &lt;#@(NSLayoutRelationEqual)                : @"==",#&gt;
+        };
+    });
+    return descriptionMap;
+}
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1D95AE07-AB88-4ABF-8D6E-2A0A05A5B699</string>
+	<string>2EF3BD01-7264-4509-A8C0-815AB1BC6501</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIColor: 图像的默认背景色</string>
+	<string>NSObject: DescriptionsByValue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

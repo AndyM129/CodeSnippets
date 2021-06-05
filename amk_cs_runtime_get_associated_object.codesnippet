@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_property_ui_collection_view</string>
+	<string>amk_cs_runtime_get_associated_object</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong, readwrite, nullable) UICollectionView *collectionView;
-</string>
+	<string>objc_getAssociatedObject(self, @selector(&lt;#getter#&gt;));</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E5CC9C00-AEB2-4489-8F82-BE45055EC794</string>
+	<string>807B88AE-9198-439E-AF93-9790F682C460</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView: @property(nonatomic, strong, readwrite, nullable) </string>
+	<string>Runtime: 关联对象的获取</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

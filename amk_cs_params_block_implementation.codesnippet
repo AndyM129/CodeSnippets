@@ -6,14 +6,14 @@
 	<string>amk_cs_params_block_implementation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>NSMutableDictionary *params = nil;
-    if (paramsBlock) {
-        params = [NSMutableDictionary dictionary];
-        paramsBlock(params);
-    }</string>
+if (paramsBlock) {
+    params = [NSMutableDictionary dictionary];
+    paramsBlock(params);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>19ADA93B-C0EB-4609-93AF-28D1CEBD2120</string>
 	<key>IDECodeSnippetLanguage</key>

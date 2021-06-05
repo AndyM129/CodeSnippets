@@ -3,24 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_color_image_bg</string>
+	<string>amk_cs_runtime_copy_ivar_list</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIColor colorWithRed:0.96 green:0.96 blue:0.96 alpha:1.00];</string>
+	<string>// #import &lt;objc/runtime.h&gt;
+unsigned int ivarListCount = 0;
+Ivar *ivarList = class_copyIvarList(&lt;#UIView#&gt;.class, &amp;ivarListCount);
+for (int i=0; i&lt;ivarListCount; i++) {
+    Ivar ivar = ivarList[i];
+    NSString *name = [NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding];
+    NSLog(@"&lt;#UIView#&gt;.class’s ivar_%d：\t%@", i, name);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1D95AE07-AB88-4ABF-8D6E-2A0A05A5B699</string>
+	<string>476FB8E8-6562-4CD6-A279-AD92499C3B5D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIColor: 图像的默认背景色</string>
+	<string>Runtime: 获取变量列表</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

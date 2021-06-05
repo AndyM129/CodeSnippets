@@ -6,7 +6,7 @@
 	<string>amk_cs_define_log_for_debug</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#import &lt;Foundation/Foundation.h&gt;

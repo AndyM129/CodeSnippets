@@ -6,13 +6,13 @@
 	<string>amk_cs_ui_view_layer_mask_shape_by_rounding_corners</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>CAShapeLayer *layerMask = [CAShapeLayer layer];
-        layerMask.frame = self.bounds;
-        layerMask.path = [UIBezierPath bezierPathWithRoundedRect:layerMask.frame byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(12, 12)].CGPath;
-        self.layer.mask = layerMask;</string>
+layerMask.frame = self.bounds;
+layerMask.path = [UIBezierPath bezierPathWithRoundedRect:layerMask.frame byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(12, 12)].CGPath;
+self.layer.mask = layerMask;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4D52519F-9227-4461-AD5B-DD3032AED0AC</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -20,7 +20,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>CAShapeLayer: 指定角的圆角遮罩</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

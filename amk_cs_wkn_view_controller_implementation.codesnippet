@@ -6,7 +6,7 @@
 	<string>amk_cs_wkn_view_controller_implementation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#import "WKOnlineGifRefreshHeader.h"
@@ -57,7 +57,7 @@
     [super viewDidDisappear:animated];
 }
 
-#pragma mark - Properties
+#pragma mark - Getters &amp; Setters
 
 #pragma mark - Data &amp; Networking
 

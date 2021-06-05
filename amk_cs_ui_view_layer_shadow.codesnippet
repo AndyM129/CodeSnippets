@@ -6,7 +6,7 @@
 	<string>amk_cs_ui_view_layer_shadow</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>&lt;#view#&gt;.layer.shadowColor = UIColor.blackColor.CGColor;
