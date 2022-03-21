@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_regex_matches</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *string = @"";
+NSString *regexPattern = @"";
+
+NSError *error = nil;
+NSRegularExpressionOptions options = NSRegularExpressionCaseInsensitive;
+NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexPattern options:options error:&amp;error];
+NSArray&lt;NSTextCheckingResult *&gt; *matches = [regex matchesInString:string?:@"" options:0 range:NSMakeRange(0, string.length)];
+
+// 识别结果
+if (error) NSLog(@"%@", error);
+NSLog(@"\"%@...\"是否匹配到：%@", [string substringToIndex:MIN(50, string.length)], matches.count&gt;0 ? @"YES" : @"NO");
+[matches enumerateObjectsUsingBlock:^(NSTextCheckingResult *result, NSUInteger idx, BOOL * _Nonnull stop) {
+    NSLog(@"No.%ld %@ =&gt; %@", idx, NSStringFromRange(result.range), [string substringWithRange:result.range]);
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>51F62F20-88CC-4635-9762-934D3B633E76</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSString: 正则匹配</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_label</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#label#&gt; = UILabel()
+&lt;#label#&gt;.text = "一二三四五六七八九十0123456789"
+&lt;#label#&gt;.textColor = UIColor.black
+&lt;#label#&gt;.textAlignment = .center
+&lt;#label#&gt;.font = UIFont.systemFont(ofSize: 12)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FDBEAAF4-A5CB-428A-9A20-E7AEFBBA1542</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>声明、初始化 UILabel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】new UILabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

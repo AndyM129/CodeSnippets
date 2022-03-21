@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_blur_effect</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
+let effectView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
+effectView.frame = &lt;#view#&gt;.bounds
+&lt;#view#&gt;.addSubview(effectView)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>47CA9026-C511-4071-80D7-B18ED036D877</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>声明、初始化、添加 模糊特效</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIBlurEffect</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

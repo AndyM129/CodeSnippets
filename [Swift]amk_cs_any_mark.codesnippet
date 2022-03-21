@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_any_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // MARK: - Init Methods
+    
+    // MARK: - Getters &amp; Setters
+    
+    // MARK: - Data &amp; Networking
+    
+    // MARK: - Public Methods
+    
+    // MARK: - Private Methods
+    
+    // MARK: - Notifications
+        
+    // MARK: - Protocol
+    
+    // MARK: - Overrides
+    
+    // MARK: - Helper Methods</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AE08ED2C-D60F-45EB-8ED1-3CFA833FCE30</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】Any: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

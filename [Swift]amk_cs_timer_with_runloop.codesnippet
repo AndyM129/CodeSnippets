@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_timer_with_runloop</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
+    print("计时器...")
+})
+RunLoop.main.add(timer, forMode: .commonModes)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B66D26C6-D3A1-46F7-9107-0E8CA10FB460</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建计时器 并添加到 RunLoop 中</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】RunLoop Timer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

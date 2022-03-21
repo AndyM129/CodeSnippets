@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_calloc_int</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#int#&gt; *pointer = (&lt;#int#&gt;*)calloc(num, sizeof(&lt;#int#&gt;));</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9043DF4B-28EE-49DC-BE40-BB13E6B393F6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>在内存的动态存储区中分配num个长度为size的连续空间</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【C】int *pointer = (int*)calloc(num, sizeof(int));</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

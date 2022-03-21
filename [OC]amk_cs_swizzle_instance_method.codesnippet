@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_swizzle_instance_method</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark -
+#if defined(WK_TARGET_DEV) || defined(WK_TARGET_QA)
+#import &lt;YYCategories/NSObject+YYAdd.h&gt;
+
+@interface &lt;#Class#&gt; (WKDebug) @end
+
+@implementation &lt;#Class#&gt; (WKDebug)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        [&lt;#Class#&gt; swizzleInstanceMethod:@selector(&lt;#selector#&gt;) with:@selector(&lt;#selector#&gt;)];
+    });
+}
+
+@end
+
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6A910530-9ED5-49D9-984A-659AAC1C118F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>运行时 方法替换</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSObject: +swizzleInstanceMethod:with:</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

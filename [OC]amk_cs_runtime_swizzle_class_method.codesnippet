@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_runtime_swizzle_class_method</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// #import &lt;objc/runtime.h&gt;
+BOOL(^swizzleClassMethod)(SEL, SEL) = ^BOOL(SEL originalSel, SEL newSel) {
+    Class class = object_getClass(self);
+    Method originalMethod = class_getInstanceMethod(class, originalSel);
+    Method newMethod = class_getInstanceMethod(class, newSel);
+    if (!originalMethod || !newMethod) return NO;
+    
+    method_exchangeImplementations(originalMethod, newMethod);
+    return YES;
+};
+
+swizzleClassMethod(&lt;#originalSel#&gt;, &lt;#newSel#&gt;);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E961A308-615F-4656-B3CE-F74793ED8C98</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Runtime: 交换类方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

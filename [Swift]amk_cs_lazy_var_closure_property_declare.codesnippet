@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_lazy_var_closure_property_declare</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var greet: (String?) -&gt; String = { 
+    [unowned self, weak delegate = self.delegate!] (name: String?) -&gt; String in
+    return "Hello \(name ?? "budy") ~~"
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>78083E39-05BA-4224-88A3-AF718B836F7F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>声明一个闭包变量属性</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】lazy var greet: (String?) -&gt; String = { ... }</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

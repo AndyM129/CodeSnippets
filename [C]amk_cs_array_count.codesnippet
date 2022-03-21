@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_array_count</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>int &lt;#count#&gt; = sizeof(&lt;#array#&gt;) / sizeof(*&lt;#array#&gt;);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F9847A8-E6BE-4968-9BDC-17779DA7D51B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>通过 sizeof 计算数组的元素个数</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【C】int count = sizeof(array) / sizeof(*array);</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

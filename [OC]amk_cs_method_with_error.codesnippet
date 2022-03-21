@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_method_with_error</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (id _Nullable)methodWithParam:(id _Nullable)param error:(NSError * _Nullable * _Nullable)error {
+    // 已有错误则直接返回
+    if (error ? *error : nil) {
+        return nil;
+    }
+    
+    BOOL success = NO; // 假设操作失败
+    NSError *err = [NSError errorWithDomain:@"com.domain.error" code:-1 userInfo:@{NSLocalizedDescriptionKey: @""}];
+    (!success &amp;&amp; error) ? *error = err : nil;
+    NSLog(@"%@", err);
+    
+    return nil;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>06C5E0E2-27BF-410B-87DB-5DA14714B502</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSObject: 方法的声明&amp;实现</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

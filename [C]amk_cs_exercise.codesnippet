@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_exercise</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 
+ ## 题目
+ 
+ 
+ ## 程序分析
+ 
+ 
+ ## 运行示例
+ 
+ ```
+ ```
+ 
+ */
+
+#include &lt;stdio.h&gt;
+
+static void func(void) {
+    
+}
+
+int main(void) { func(); printf("\n"); return 0; }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>864A0273-0578-4E69-AEF1-2C20D22337E5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>编程练习</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【C】exercise</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

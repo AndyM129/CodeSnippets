@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// #include &lt;stdarg.h&gt;
+void &lt;#func#&gt;(int va_count, ...) {
+    va_list va_list;
+    va_start(va_list, va_count);
+    
+    for (int i = 0; i &lt; va_count; i++) {
+        &lt;#int#&gt; var = va_arg(va_list, &lt;#int#&gt;);
+        &lt;#printf("arg %d = %d\n", i, var);#&gt;
+    }
+    
+    va_end(va_list);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>732753FF-086A-4CE8-BCBF-AC4F7ADDE44F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>带有可变数量参数的函数</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【C】void func(int, ...) {}</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
