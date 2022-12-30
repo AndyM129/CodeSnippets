@@ -6,7 +6,7 @@
 	<string>amk_cs_char_chars</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>char chars[] = {&lt;#'H', 'e', 'l', 'l', 'o', #&gt;'\0'};</string>

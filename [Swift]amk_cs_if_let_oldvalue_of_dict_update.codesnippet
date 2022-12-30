@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_if_let_oldvalue_of_dict_update</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if let &lt;#oldValue#&gt; = &lt;#dict#&gt;.updateValue(&lt;#"newValue"#&gt;, forKey: &lt;#"aKey"#&gt;) {
+    print("存在旧值，且为\(oldValue)")
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DAEA08AC-FF50-4A7E-A6D2-D997E50BE4CE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】if let oldValue = dict.updateValue("newValue", forKey: "aKey") { ... }</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

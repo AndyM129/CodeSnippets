@@ -14,10 +14,12 @@
 	<string>A05D1C76-6A4A-4343-8A94-E31B51198A63</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>[UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:.3]</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIColor: 随机背景色</string>
+	<string>【OC】UIColor: 随机背景色</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

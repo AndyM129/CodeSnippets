@@ -6,7 +6,6 @@
 	<string>amk_cs_ui_collection_view_lazyload</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -29,10 +28,12 @@
 	<string>E83487DF-5FBF-4246-B6FC-17252F16E378</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>- (UICollectionView *)collectionView { ... }</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView: 懒加载</string>
+	<string>【OC】UICollectionView: 懒加载</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

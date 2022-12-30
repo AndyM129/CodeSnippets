@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_typedef_string_enum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
+//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
+//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】typedef: 定义字符串枚举名</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

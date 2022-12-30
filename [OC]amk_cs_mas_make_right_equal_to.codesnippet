@@ -9,15 +9,15 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.right.mas_equalTo(30);</string>
+	<string>make.right.mas_equalTo(&lt;#value#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6DBA0428-1EA2-4776-9454-057E111EDB69</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>make.right.mas_equalTo(&lt;#value#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masnory: make.right.mas_equalTo(...);</string>
+	<string>【OC】Masnory: make.right.mas_equalTo(...);</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

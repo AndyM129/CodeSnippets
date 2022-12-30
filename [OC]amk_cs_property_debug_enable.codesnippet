@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_property_debug_enable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// 调试开关，默认 NO
+@property (nonatomic, assign, readwrite) BOOL debugEnable;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>26050CDC-47DD-4881-9AD8-6CA35332F056</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>/// 调试开关，默认 NO
+@property (nonatomic, assign, readwrite) BOOL debugEnable;</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 定义「调试开关」属性</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view_cell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Deinit
+
+deinit {
+    
+}
+
+// MARK: - Init Methods
+
+override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    super.init(style: style, reuseIdentifier: reuseIdentifier)
+    backgroundColor = UIColor.white
+    selectedBackgroundView = UIView(frame: bounds)
+    selectedBackgroundView?.backgroundColor = UIColor(white: 0, alpha: 0.1)
+}
+
+required init?(coder: NSCoder) {
+    super.init(coder: coder)
+}
+
+// MARK: - Getters &amp; Setters
+
+lazy var iconImageView: UIImageView = {
+    let iconImageView = UIImageView.init()
+    iconImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 30, height: 30))
+    iconImageView.contentMode = .scaleAspectFit
+    contentView.addSubview(iconImageView)
+    return iconImageView
+}()
+
+lazy var titleLabel: UILabel = {
+    let titleLabel = UILabel()
+    titleLabel.text = "一二三四五六七八九十0123456789"
+    titleLabel.textColor = UIColor.black
+    titleLabel.textAlignment = .left
+    titleLabel.numberOfLines = 1;
+    titleLabel.font = UIFont.systemFont(ofSize: 17)
+    contentView.addSubview(titleLabel)
+    return titleLabel
+}()
+
+lazy var arrowImageView: UIImageView = {
+    let arrowImageView = UIImageView.init()
+    arrowImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 17, height: 17))
+    arrowImageView.contentMode = .scaleAspectFit
+    contentView.addSubview(arrowImageView)
+    return arrowImageView
+}()
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+/// 行高
+static func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath, withData: Any?) -&gt; CGFloat {
+    return 60
+}
+
+override class var requiresConstraintBasedLayout: Bool {
+    return true
+}
+
+override func updateConstraints() {
+    iconImageView.snp.makeConstraints { make in
+        make.width.equalTo(30)
+        make.height.equalTo(30)
+        make.left.equalTo(contentView).offset(15)
+        make.centerY.equalTo(contentView)
+    }
+    titleLabel.snp.makeConstraints { make in
+        make.left.equalTo(iconImageView.snp.right).offset(10)
+        make.right.equalTo(arrowImageView).offset(-10)
+        make.centerY.equalTo(contentView)
+    }
+    arrowImageView.snp.makeConstraints { make in
+        make.width.equalTo(17)
+        make.height.equalTo(17)
+        make.right.equalTo(contentView).offset(-15)
+        make.centerY.equalTo(contentView)
+    }
+    
+    //according to apple super should be called at end of method
+    super.updateConstraints()
+}
+
+override func prepareForReuse() {
+    super.prepareForReuse()
+    
+}
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DC90497-4166-4969-A839-41CF9A333E55</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITableViewCell: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

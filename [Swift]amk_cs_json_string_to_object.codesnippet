@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_json_string_to_object</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let jsonString = "{\"temperature\":\"28\",\"humidity\":\"88\",\"info\":\"晴\",\"wid\":\"00\",\"direct\":\"东南风\",\"power\":\"3级\",\"aqi\":\"35\"}"
+let jsonData = jsonString.data(using: String.Encoding.utf8)
+let dict = try? JSONSerialization.jsonObject(with: jsonData ?? Data(), options: .mutableContainers)
+print("\(jsonString)\n=&gt; \(String(describing: dict))\n\n\n")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FE62E2A-1631-435D-BEDB-831441E49D59</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】JSONSerialization: jsonString -&gt; jsonObject</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

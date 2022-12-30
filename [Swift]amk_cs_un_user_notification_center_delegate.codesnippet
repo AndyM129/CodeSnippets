@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_un_user_notification_center_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: UNUserNotificationCenterDelegate
+
+func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -&gt; Void) {
+    completionHandler([.banner, .sound])
+}
+
+func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -&gt; Void) {
+    if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
+        log.info("点击了通知" , context: ["identifier":response.notification.request.identifier, "actionIdentifier":response.actionIdentifier, "userInfo":response.notification.request.content.userInfo])
+    } else if response.actionIdentifier == UNNotificationDismissActionIdentifier {
+        log.info("点击了通知的关闭按钮" , context: ["identifier":response.notification.request.identifier, "actionIdentifier":response.actionIdentifier, "userInfo":response.notification.request.content.userInfo])
+    } else {
+        log.info("点击了通知的自定义按钮: \(response.actionIdentifier)", context: ["identifier":response.notification.request.identifier, "actionIdentifier":response.actionIdentifier, "userInfo":response.notification.request.content.userInfo])
+    }
+    completionHandler()
+}
+
+func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+    log.info("", context: ["notification":notification])
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2EECE9A5-A6BF-495E-B490-AD6E68DDDFD4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UNUserNotificationCenterDelegate: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

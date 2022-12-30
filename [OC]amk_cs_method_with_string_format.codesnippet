@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_method_with_string_format</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)methodWithString:(NSString *)format, ... {
+    va_list arguments;
+    va_start(arguments, format);
+    NSString *string = [NSString.alloc initWithFormat:format arguments:arguments];
+    va_end(arguments);
+    
+    &lt;#doSomething...#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>41C4455C-DA73-434B-BF58-2D39873126B2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)methodWithString:(NSString *)format, ...  { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 定义含有可变参数的方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

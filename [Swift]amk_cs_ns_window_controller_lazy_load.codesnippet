@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_window_controller_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var windowController: NSWindowController = {
+    let contentRect: NSRect = NSRect(x: 0, y: 0, width: 600, height: 400)
+    let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable]
+    
+    let windowController = NSWindowController()
+    windowController.window = NSWindow(contentRect: contentRect, styleMask: styleMask, backing: .buffered, defer: false)
+    windowController.window?.windowController = windowController
+    windowController.window?.title = "Title"
+    windowController.window?.contentViewController = &lt;#CustomViewController()#&gt;
+    return windowController
+    
+    // 后需调用如下方法 以显示窗口
+    //windowController.showWindow(self)
+    //windowController.window?.center()
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FC36A6C0-B0E5-4323-BD1C-5BEA6046776A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSWindowController: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

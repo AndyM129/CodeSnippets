@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_app_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Life Circle
+
+func applicationDidFinishLaunching(_ aNotification: Notification) {
+    window.makeKeyAndOrderFront(self)
+    window.center()
+}
+
+func applicationWillTerminate(_ aNotification: Notification) {
+    // Insert code here to tear down your application
+}
+
+func applicationSupportsSecureRestorableState(_ app: NSApplication) -&gt; Bool {
+    return true
+}
+
+// MARK: - Getters &amp; Setters
+
+lazy var window: NSWindow = {
+    let contentRect: NSRect = NSRect(x: 0, y: 0, width: 900, height: 500)
+    let styleMask: NSWindow.StyleMask = [.titled, .closable, .resizable]
+    let backing: NSWindow.BackingStoreType = .buffered
+    let window = NSWindow(contentRect: contentRect, styleMask: styleMask, backing: .buffered, defer: false)
+    window.title = "xxxx"
+    return window
+}()
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8AAB3B1C-F45B-4D03-B708-446C94735E02</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】AppDelegate: 代码模板（待完成）</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

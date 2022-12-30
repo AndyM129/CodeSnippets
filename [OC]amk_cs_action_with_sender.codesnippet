@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_action_with_sender</string>
+	<string>amk_cs_method_with_sender</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#action#&gt;:(id)sender {
+	<string>- (void)&lt;#method#&gt;:(id)sender {
     NSLog(@"");
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -17,9 +17,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>- (void)&lt;#method#&gt;:(id)sender { ... }</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: 通用方法 代码框架</string>
+	<string>【OC】NSObject: 通用方法 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

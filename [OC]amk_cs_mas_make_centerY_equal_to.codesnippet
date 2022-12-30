@@ -9,15 +9,15 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.centerY.mas_equalTo(self.titleLabel);</string>
+	<string>make.centerY.mas_equalTo(&lt;#value#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6F3576F1-ED1F-4EF7-BA3C-05163A14F03B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>make.centerY.mas_equalTo(&lt;#value#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masonry: make.centerY.mas_equalTo(...);</string>
+	<string>【OC】Masonry: make.centerY.mas_equalTo(...);</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

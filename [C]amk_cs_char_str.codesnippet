@@ -6,7 +6,7 @@
 	<string>amk_cs_char_str</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>char str[] = "&lt;#hello#&gt;";

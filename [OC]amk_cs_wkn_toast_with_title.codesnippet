@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_wkn_toast_with_title</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[WKHUDHelper.HUDToastView postToastViewWithTitle:&lt;#@"当前无网络，请联网后尝试"#&gt; delay:3.0];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4EA0EC8F-33D4-42AC-9DE2-7A58128CD36D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[WKHUDHelper.HUDToastView postToastViewWithTitle:&lt;#@"当前无网络，请联网后尝试"#&gt; delay:3.0];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】WKNHUD: 显示toast提示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

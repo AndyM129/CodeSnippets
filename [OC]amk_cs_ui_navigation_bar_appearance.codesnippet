@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_navigation_bar_appearance</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UINavigationBar.appearance().barTintColor = UIColor(red:0.10, green:0.10, blue:0.10, alpha:1.00)
+UINavigationBar.appearance().tintColor = UIColor.white
+UINavigationBar.appearance().isTranslucent = true
+UINavigationBar.appearance().titleTextAttributes = [
+    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 19.0),
+    NSAttributedString.Key.foregroundColor: UIColor.white
+]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0836B2BE-B3E7-4DDB-AF6F-D538A3C4F946</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UINavigationBar: appearance 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

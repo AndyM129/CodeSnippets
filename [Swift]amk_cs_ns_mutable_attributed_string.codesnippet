@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_mutable_attributed_string</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let attributedString = NSMutableAttributedString(string: &lt;#"一二三四五六七八九十0123456789"#&gt;)
+attributedString.addAttributes([
+    NSAttributedString.Key.foregroundColor: UIColor.red,
+    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12),
+], range: NSRange(location: 0, length: attributedString.length))</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9C934635-E657-45E5-9109-74031B05EC9B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSMutableAttributedString: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_box_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var box: NSBox = {
+    let box = NSBox()
+    box.boxType = .primary
+    box.title = "NSBox"
+    box.contentViewMargins = NSSize(width: 10, height: 10)
+    view.addSubview(box)
+    
+    // 添加子视图
+    let label = NSTextField(labelWithString: "box.contentView.addSubview( ... )")
+    box.contentView?.addSubview(label)
+    label.snp.makeConstraints { make in
+        make.left.right.equalToSuperview().inset(box.contentViewMargins.width)
+        make.top.bottom.equalToSuperview().inset(box.contentViewMargins.height)
+    }
+    return box
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DBB564E1-631B-469A-B1E3-60E664283F8F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSBox: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

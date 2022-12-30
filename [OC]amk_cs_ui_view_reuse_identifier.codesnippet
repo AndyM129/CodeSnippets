@@ -9,16 +9,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static NSString * const &lt;#AMKCustomView#&gt;ReuseIdentifier = @"&lt;#AMKCustomView#&gt;ReuseIdentifier";
+	<string>static NSString * const &lt;#CustomView#&gt;ReuseIdentifier = @"&lt;#CustomView#&gt;ReuseIdentifier";
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B03E4E1D-462A-4968-9CB6-CA7A4647B888</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>static NSString * const &lt;#CustomView#&gt;ReuseIdentifier = @"&lt;#CustomView#&gt;ReuseIdentifier";</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIView: 声明复用标识</string>
+	<string>【OC】UIView: 声明复用标识</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

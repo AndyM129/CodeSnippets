@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_image_view_alloc_init_with_image</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[UIImageView.alloc initWithImage:[UIImage imageNamed:@"&lt;#image name#&gt;"]];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AA16B548-DEE0-4204-8E15-A8BFD029A3B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[UIImageView.alloc initWithImage:[UIImage imageNamed:@"&lt;#image name#&gt;"]];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIImageView: -initWithImage:</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

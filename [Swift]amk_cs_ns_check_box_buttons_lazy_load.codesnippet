@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_check_box_buttons_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var checkBoxButtons: [NSButton] = {
+    let defaultIndex = 1
+    let titles = ["A. xxx", "B. yyy", "C. zzz", "D. other"]
+    var checkBoxButtons: [NSButton] = []
+    for (index, title) in titles.enumerated() {
+        let button = NSButton(title: title, target: self, action: #selector(checkBoxChanged))
+        button.tag = index
+        button.state = index == defaultIndex ? NSControl.StateValue.on : NSControl.StateValue.off // 设置默认值
+        button.setButtonType(.switch)
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.left.equalTo(index == 0 ? checkBoxLabel.snp.right : checkBoxButtons[index-1].snp.right).offset(10)
+            make.top.equalTo(checkBoxLabel)
+        }
+        checkBoxButtons.append(button)
+    }
+    return checkBoxButtons
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8009DB9-0A71-41D3-AC91-930EA20FB649</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSButton: 懒加载 代码框架 - checkBoxButtons 组</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

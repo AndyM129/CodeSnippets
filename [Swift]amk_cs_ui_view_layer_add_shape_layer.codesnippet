@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_layer_add_shape_layer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let shapeLayer = CAShapeLayer()
+shapeLayer.lineWidth = 3
+shapeLayer.lineCap = kCALineCapRound
+shapeLayer.lineJoin = kCALineJoinRound
+shapeLayer.strokeColor = UIColor.red.cgColor
+shapeLayer.fillColor = UIColor.orange.cgColor
+shapeLayer.fillRule = kCAFillRuleEvenOdd
+shapeLayer.path = {
+    let path = CGMutablePath()
+    path.move(to: CGPoint(x: 0, y: 0))
+    path.addLine(to: CGPoint(x: 100, y: 0))
+    path.addLine(to: CGPoint(x: 50, y: 30))
+    path.addLine(to: CGPoint(x: 0, y: 0))
+    return path
+}()
+&lt;#view#&gt;.layer.addSublayer(shapeLayer)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8E06313D-5DC1-43C3-B9B6-F992F25C506F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIVIew: 添加 CAShapeLayer 并绘制形状</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

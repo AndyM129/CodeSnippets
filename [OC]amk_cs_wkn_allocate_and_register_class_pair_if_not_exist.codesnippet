@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_allocate_and_register_class_pair_if_not_exist</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// Debug：若不存在，则创建&amp;注册类（仅在 DEV、QA Target 下生效，否则 不创建类，直接返回 superclass）
+//FOUNDATION_EXPORT Class WKNAllocateAndRegisterClassPairIfNotExist(Class superclass, NSString *className);
+
+Class AMKAllocateAndRegisterClassPairIfNotExist(Class superclass, NSString *className) {
+#if defined(WK_TARGET_DEV) || defined(WK_TARGET_QA)
+    NSAssert(superclass, @"superclass 必须存在");
+    NSAssert(className.length, @"className 不可为空");
+    
+    Class class = NSClassFromString(className);
+    if (class) {
+        NSAssert([class isKindOfClass:superclass], [NSString stringWithFormat:@"%@ 类已存在，且不是 %@ 的子类", className, NSStringFromClass(superclass)]);
+    } else {
+        class = objc_allocateClassPair(superclass, name, 0);
+        objc_registerClassPair(class);
+    }
+    return class;
+#else
+    return superclass;
+#endif
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DA0AF53C-96F8-4358-88A3-86D70E596E75</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Class AMKAllocateAndRegisterClassPairIfNotExist(Class superclass, NSString *className) { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Runtime: Debug 模式下，按需运行时创建自定义类</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

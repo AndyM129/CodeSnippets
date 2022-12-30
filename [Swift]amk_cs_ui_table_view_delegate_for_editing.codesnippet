@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view_delegate_for_editing</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: UITableViewDelegate - Editing
+
+func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -&gt; [UITableViewRowAction]? {
+    var actions: [UITableViewRowAction] = []
+    actions.append({
+        let action = UITableViewRowAction(style: .normal, title: "删除") { action, indexPath in
+            print("tableViewEditActionTriggered: \(indexPath), \(action) \(action.title ?? "")")
+        }
+        action.backgroundColor = UIColor(red:0.93, green:0.33, blue:0.27, alpha:1.00)
+        return action
+    }())
+    actions.append({
+        let action = UITableViewRowAction(style: .normal, title: "确认") { action, indexPath in
+            print("tableViewEditActionTriggered: \(indexPath), \(action) \(action.title ?? "")")
+        }
+        action.backgroundColor = UIColor(red:0.22, green:0.52, blue:0.97, alpha:1.00)
+        return action
+    }())
+    return actions
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5684FF90-6A20-4509-A7C8-AB269FBF8119</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITableViewDelegate: 编辑相关 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

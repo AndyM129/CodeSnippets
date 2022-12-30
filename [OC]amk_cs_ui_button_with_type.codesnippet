@@ -27,10 +27,12 @@ button.titleLabel.font = [UIFont systemFontOfSize:14];
 	<string>922CBBD6-CA6C-46C9-8487-8BD31F122537</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIButton: 代码框架</string>
+	<string>【OC】UIButton: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

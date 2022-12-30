@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_define_if_elif_else_endif</string>
+	<string>amk_cs_if_defined_amk_dev_or_qa</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#if defined(AMK_TARGET_DEV)
-
+&lt;##&gt;
 #elif defined(AMK_TARGET_QA)
-
+&lt;##&gt;
 #else
-
-#endif
-</string>
+&lt;##&gt;
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E106DFCD-2AD0-4105-99EC-B0C841F1FEB7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -24,7 +23,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>define: if...elif..else..endif</string>
+	<string>【OC】#if defined(AMK_TARGET_DEV) ... #elif defined(AMK_TARGET_QA) ... #else ... #endif</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_category_subclassing_hooks_implementation</string>
+	<string>amk_cs_implementation_subclassing_hooks_category</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@implementation &lt;#class name#&gt; (&lt;#category name prefix#&gt;SubclassingHooks)
+	<string>@implementation &lt;#ClassName#&gt; (&lt;#CategoryNamePrefix#&gt;SubclassingHooks)
 
 &lt;#methods#&gt;
 
@@ -19,9 +19,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>@implementation &lt;#ClassName#&gt; (&lt;#CategoryNamePrefix#&gt;SubclassingHooks)    ...</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Class: SubclassingHooks Category Implementation</string>
+	<string>【OC】Class: SubclassingHooks Category Implementation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

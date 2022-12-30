@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_add_notification_observers</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)addNotificationObservers {
+    [NSNotificationCenter.defaultCenter addObserver:self selector:&lt;#(nonnull SEL)#&gt; name:&lt;#(nullable NSNotificationName)#&gt; object:nil];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4BAF4B7E-FCE1-41C2-9B15-BB54C4E9A3C8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)addNotificationObservers { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 添加 -addNotificationObservers 方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

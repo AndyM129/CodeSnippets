@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_swizzle_instance_method</string>
+	<string>amk_cs_swizzle_instance_method_by_yy_categories</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
@@ -32,9 +32,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>运行时 方法替换</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: +swizzleInstanceMethod:with:</string>
+	<string>【OC】NSObject: 运行时替换 实例方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

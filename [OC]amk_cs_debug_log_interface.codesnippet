@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_object_debug_log_interface</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// 自定义Log，推荐使用 &lt;#自定义#&gt;Log(FORMAT, ...)
+- (void)logWithFunction:(const char *)function line:(NSInteger)line string:(NSString *)format, ...;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>35FF55B3-B9E2-427B-A185-8F8BFCE7B192</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)logWithFunction:(const char *)function line:(NSInteger)line string:(NSString *)format, ...;</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 自定义Log 方法声明</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

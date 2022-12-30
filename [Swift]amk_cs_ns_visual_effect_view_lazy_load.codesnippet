@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_visual_effect_view_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var visualEffectView: NSVisualEffectView = {
+    let visualEffectView = NSVisualEffectView()
+    visualEffectView.wantsLayer = true
+    visualEffectView.material = .popover
+    visualEffectView.state = .active
+    visualEffectView.blendingMode = .behindWindow
+    view.addSubview(visualEffectView, positioned: .below, relativeTo: view.subviews.first)
+    return visualEffectView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>09282806-1FB6-4BED-B470-21FA2F88A07F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSVisualEffectView: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

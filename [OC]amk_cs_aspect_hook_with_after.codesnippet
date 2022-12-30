@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_aspect_hook_with_after</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSError *error;
+static id&lt;AspectToken&gt; aspectToken;
+aspectToken = [&lt;#Class#&gt; aspect_hookSelector:@selector(&lt;#selector#&gt;) withOptions:AspectPositionAfter usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
+    if ([aspectInfo.instance conformsToProtocol:@protocol(UIApplicationDelegate)]) {
+        &lt;#coding...#&gt;
+        
+        if (&lt;#condition#&gt;) {
+            [aspectToken remove];
+            aspectToken = nil;
+        }
+    }
+} error:&amp;error];
+if (error) NSLog(@"❌ %@", error);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E211AAB5-AEAB-480B-8A9A-D45389C224D7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Aspect: hook with after</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

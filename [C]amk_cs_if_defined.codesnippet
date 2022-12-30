@@ -6,9 +6,7 @@
 	<string>amk_cs_if_defined</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
-		<string>CodeBlock</string>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#if defined(&lt;#name#&gt;)

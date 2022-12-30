@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_un_user_notification_center_request_authorization</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+UNUserNotificationCenter.current().requestAuthorization(options: options) { granted, error in
+    if granted {
+        log.info("已获取通知权限")
+    } else {
+        log.error("通知权限获取失败 =&gt;", context: ["error":error])
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>45D8D91D-8BB0-4485-9487-035ED44EEA3A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UNUserNotificationCenter.current().requestAuthorization(options: options) { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UNUserNotificationCenter: 请求权限</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>objc_setAssociatedObject(self, @selector(&lt;#getter#&gt;), &lt;#newVal#&gt;, OBJC_ASSOCIATION_RETAIN);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Runtime: 关联对象的添加 - RETAIN</string>
+	<string>【OC】Runtime: 关联对象的添加 - RETAIN</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

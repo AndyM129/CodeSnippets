@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_split_view_controller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let splitViewController = NSSplitViewController()
+splitViewController.splitView.dividerStyle = .paneSplitter
+splitViewController.addSplitViewItem({
+    let viewController = CustomContentViewController()
+    //viewController.view.layer?.backgroundColor = NSColor(red:0.86, green:0.39, blue:0.37, alpha:0.3).cgColor
+
+    let splitViewItem = NSSplitViewItem(sidebarWithViewController: viewController)
+    splitViewItem.canCollapse = true
+    splitViewItem.minimumThickness = 200
+    splitViewItem.maximumThickness = 300
+    return splitViewItem
+}())
+splitViewController.addSplitViewItem({
+    let viewController = CustomContentViewController()
+    //viewController.view.layer?.backgroundColor = NSColor(red:0.22, green:0.68, blue:0.38, alpha:0.3).cgColor
+
+    let splitViewItem = NSSplitViewItem(contentListWithViewController: viewController)
+    splitViewItem.canCollapse = false
+    splitViewItem.minimumThickness = 400
+    return splitViewItem
+}())
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CD19910F-C840-486B-9669-BD20FB471C74</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSSplitViewController: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

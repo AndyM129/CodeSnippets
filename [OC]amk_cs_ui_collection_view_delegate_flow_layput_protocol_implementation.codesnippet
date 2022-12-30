@@ -6,7 +6,6 @@
 	<string>amk_cs_ui_collection_view_delegate_flow_layput_protocol_implementation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -46,10 +45,12 @@
 	<string>BA7DFC07-058E-4389-83BC-D7F87F352AD9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>UICollectionViewDelegateFlowLayout ...</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionViewDelegateFlowLayout: 数据源协议实现</string>
+	<string>【OC】UICollectionViewDelegateFlowLayout: 数据源协议实现</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

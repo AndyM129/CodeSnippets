@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: strongSelf</string>
+	<string>【OC】NSObject: __strong __typeof__(weakSelf)strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -19,9 +19,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>- (id _Nullable)methodWithParam:(id _Nullable)param completion:(void (^ _Nullable)(BOOL finished))completion { ... }</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: 方法的声明&amp;实现</string>
+	<string>【OC】NSObject: 定义一个含有回调参数的方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

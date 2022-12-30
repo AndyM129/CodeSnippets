@@ -14,10 +14,12 @@
 	<string>CFF9C4DD-5AE1-46ED-A560-207FBF36D3CA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>UICollectionViewDelegateFlowLayout, UICollectionViewDataSource</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView: 遵守协议</string>
+	<string>【OC】UICollectionView: 遵守协议</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

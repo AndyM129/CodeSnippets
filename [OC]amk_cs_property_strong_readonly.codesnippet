@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_property_strong_readonly</string>
+	<string>amk_cs_property_strong_readonly_ns_object</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong, readonly, nullable) &lt;#NSObject#&gt; *&lt;#object#&gt;;</string>
+	<string>@property (nonatomic, strong, readonly, nullable) &lt;#NSObject#&gt; *&lt;#object#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F16AE1A5-20BF-4351-9F62-16A23D8630FB</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: @property(nonatomic, strong, readonly, nullable)</string>
+	<string>【OC】NSObject: @property (nonatomic, strong, readonly, nullable) &lt;#NSObject#&gt; *&lt;#object#&gt;;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

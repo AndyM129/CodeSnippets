@@ -17,9 +17,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) { ... }];</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masonry: 创建约束 </string>
+	<string>【OC】Masonry: 创建约束 </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

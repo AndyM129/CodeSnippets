@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_combo_box_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var comboBox: NSComboBox = {
+    let comboBox = NSComboBox()
+    comboBox.delegate = self
+    comboBox.completes = true
+    comboBox.numberOfVisibleItems = 5
+    comboBox.addItem(withObjectValue: "Value 1")
+    comboBox.addItem(withObjectValue: "Value 2")
+    comboBox.addItems(withObjectValues: ["Value 3", "Value 4"])
+    comboBox.stringValue = "NSComboBox with items and delegate"
+    view.addSubview(comboBox)
+    return comboBox
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>92BDC3AC-D512-49EB-B855-BCF2526FE20F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSComboBox: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

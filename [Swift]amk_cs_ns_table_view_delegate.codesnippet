@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_table_view_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: NSTableViewDelegate
+
+class VerticallyCenteredTextFieldCell: NSTextFieldCell {
+    
+    override func drawingRect(forBounds theRect: NSRect) -&gt; NSRect {
+        var newRect:NSRect = super.drawingRect(forBounds: theRect)
+        let textSize:NSSize = self.cellSize(forBounds: theRect)
+        let heightDelta:CGFloat = newRect.size.height - textSize.height
+        if heightDelta &gt; 0 {
+            newRect.size.height = textSize.height
+            newRect.origin.y += heightDelta / 2
+        }
+        return newRect
+    }
+    
+}
+
+/// 设置行高
+@objc func tableView(_ tableView: NSTableView, heightOfRow row: Int) -&gt; CGFloat {
+    return -1 // -1 则为默认行高
+}
+
+/// 设置某个元素的具体视图
+@objc func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -&gt; NSView? {
+    guard let tableColumn = tableColumn else { return nil }
+    let column = tableView.tableColumns.firstIndex(of: tableColumn) ?? -1
+    
+    // icon
+    if tableColumn.identifier == TableColumnIdentifier.icon {
+        let cellView: NSImageView = tableView.makeView(withIdentifier: tableColumn.identifier, owner: self) as? NSImageView ?? {
+            let cellView = NSImageView()
+            cellView.identifier = tableColumn.identifier
+            return cellView
+        }()
+        cellView.image = NSImage(systemSymbolName: "doc.text", accessibilityDescription: nil)
+        return cellView
+    }
+    
+    // label
+    if tableColumn.identifier == TableColumnIdentifier.label {
+        let cellView: NSTextField = tableView.makeView(withIdentifier: tableColumn.identifier, owner: self) as? NSTextField ?? {
+            let cellView = NSTextField()
+            cellView.identifier = tableColumn.identifier
+            cellView.cell = VerticallyCenteredTextFieldCell()
+            cellView.isBordered = false
+            cellView.drawsBackground = false
+            cellView.isEditable = false
+            return cellView
+        }()
+        cellView.stringValue = "(\(column), \(row))"
+        return cellView
+    }
+    
+    // textField
+    if tableColumn.identifier == TableColumnIdentifier.textField {
+        let cellView: NSTextField = tableView.makeView(withIdentifier: tableColumn.identifier, owner: self) as? NSTextField ?? {
+            let cellView = NSTextField()
+            cellView.cell = VerticallyCenteredTextFieldCell()
+            cellView.identifier = tableColumn.identifier
+            cellView.isBordered = false
+            cellView.drawsBackground = false
+            cellView.isEditable = true
+            return cellView
+        }()
+        cellView.stringValue = "(\(column), \(row))"
+        return cellView
+    }
+    
+    return nil
+}
+
+/// 设置每行容器视图
+func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -&gt; NSTableRowView? {
+    return segmentedControlForTableRowViewClass.integerValue==0 ? nil : AMTableRowView()
+}
+
+/// 当添加行时调用的回调，如滑入窗口
+func tableView(_ tableView: NSTableView, didAdd rowView: NSTableRowView, forRow row: Int) {
+    log.debug("didAddRowView", context: ["rowView":rowView, "row":row])
+}
+
+/// 当移除行时调用的回调，如滑出窗口
+func tableView(_ tableView: NSTableView, didRemove rowView: NSTableRowView, forRow row: Int) {
+    log.debug("didRemoveRowView", context: ["rowView":rowView, "row":row])
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FFA70D4-1DF5-4E67-93D6-5C67D448051C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTableViewDelegate: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

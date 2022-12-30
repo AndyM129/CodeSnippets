@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_class_drag_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Cocoa
+import SwiftyBeaver_AMKExtensions
+
+/// 通用拖拽视图
+class DragView: NSView, NSPasteboardItemDataProvider, NSDraggingSource {
+    
+    // MARK: - Deinit
+    
+    deinit {
+        
+    }
+    
+    // MARK: - Init Methods
+    
+    override init(frame frameRect: NSRect) {
+        super.init(frame: frameRect)
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    // MARK: - Getters &amp; Setters
+    
+    /// 拖入状态
+    enum DraggingInState { case entered, updated, exited, prepare, perform }
+    
+    /// 可拖入的剪贴板类型
+    var registeredDraggedInTypes: [NSPasteboard.PasteboardType]? {
+        get { return registeredDraggedTypes }
+        set { registerForDraggedTypes(newValue ?? []) }
+    }
+    
+    /// 拖入回调
+    var draggingInHandler: ((_ destinationView: DragView, _ sender: NSDraggingInfo?, _ state: DraggingInState) -&gt; NSDragOperation?)?
+    
+    /// 处理拖入回调
+    var dragInOperationHandler: ((_ destinationView: DragView, _ sender: NSDraggingInfo, _ perform: Bool) -&gt; Bool)?
+    
+    /// 支持拖入的文件扩展名，nil 为忽略
+    var registeredDraggedInPathExtensions: [String]?
+    
+    /// 拖出状态
+    enum DraggingOutState { case sourceOperationMask, willBegin, moved, ended }
+    
+    /// 可拖出的剪贴板类型
+    var registeredDraggedOutTypes: [NSPasteboard.PasteboardType]?
+    
+    /// 处理拖出回调
+    var draggingOutOperationHandler: ((_ destinationView: DragView, _ pasteboard: NSPasteboard?, _ item: NSPasteboardItem, _ type: NSPasteboard.PasteboardType) -&gt; Void)?
+    
+    /// 处理拖出回调：draggingSession:sourceOperationMaskForDraggingContext:
+    var draggingOutSourceOperationMaskHandler: ((_ destinationView: DragView, _ session: NSDraggingSession, _ context: NSDraggingContext) -&gt; NSDragOperation)?
+    
+    /// 处理拖出回调：draggingSession:willBeginAtPoint:
+    var draggingOutWillBeginHandler: ((_ destinationView: DragView, _ session: NSDraggingSession, _ willBeginAtScreenPoint: NSPoint) -&gt; Void)?
+    
+    /// 处理拖出回调：draggingSession:movedToPoint:
+    var draggingOutMovedHandler: ((_ destinationView: DragView, _ session: NSDraggingSession, _ movedToScreenPoint: NSPoint) -&gt; Void)?
+    
+    /// 处理拖出回调：draggingSession:endedAtPoint:operation:
+    var draggingOutEndedHandler: ((_ destinationView: DragView, _ session: NSDraggingSession, _ endedAtScreenPoint: NSPoint, _ operation: NSDragOperation) -&gt; Void)?
+    
+    // MARK: - Data &amp; Networking
+    
+    // MARK: - Layout Subviews
+    
+    // MARK: - Action Methods
+    
+    override func mouseDragged(with event: NSEvent) {
+        if let registeredDraggedOutTypes = registeredDraggedOutTypes, !registeredDraggedOutTypes.isEmpty {
+            let draggingItem = NSDraggingItem(pasteboardWriter: {
+                let pasteboardItem = NSPasteboardItem()
+                pasteboardItem.setDataProvider(self, forTypes: registeredDraggedOutTypes)
+                return pasteboardItem
+            }())
+            draggingItem.setDraggingFrame(self.bounds, contents: {
+                let pdfData = self.dataWithPDF(inside: self.bounds)
+                let imageFromPDF = NSImage(data: pdfData)
+                return imageFromPDF
+            }())
+            beginDraggingSession(with: [draggingItem], event: event, source: self)
+        }
+    }
+    
+    // MARK: - Notifications
+    
+    // MARK: - KVO
+    
+    // MARK: - Protocols
+    
+    // MARK: NSDraggingDestination
+    
+    override func draggingEntered(_ sender: NSDraggingInfo) -&gt; NSDragOperation {
+        return draggingInHandler?(self, sender, .entered) ?? .generic
+    }
+    
+    override func draggingUpdated(_ sender: NSDraggingInfo) -&gt; NSDragOperation {
+        return draggingInHandler?(self, sender, .updated) ?? .generic
+    }
+    
+    override func draggingExited(_ sender: NSDraggingInfo?) {
+        let _ = draggingInHandler?(self, sender, .exited)
+    }
+    
+    override func prepareForDragOperation(_ sender: NSDraggingInfo) -&gt; Bool {
+        let _ = draggingInHandler?(self, sender, .prepare)
+        return dragInOperationHandler?(self, sender, false) ?? false
+    }
+    
+    override func performDragOperation(_ sender: NSDraggingInfo) -&gt; Bool {
+        let _ = draggingInHandler?(self, sender, .perform)
+        let res = dragInOperationHandler?(self, sender, true) ?? false
+        if res { sender.draggingDestinationWindow?.orderFrontRegardless() }
+        return res
+    }
+    
+    // MARK: NSPasteboardItemDataProvider
+    
+    func pasteboard(_ pasteboard: NSPasteboard?, item: NSPasteboardItem, provideDataForType type: NSPasteboard.PasteboardType) {
+        draggingOutOperationHandler?(self, pasteboard, item, type)
+    }
+    
+    // MARK: NSDraggingSource
+    
+    @objc(draggingSession:sourceOperationMaskForDraggingContext:) func draggingSession(_ session: NSDraggingSession, sourceOperationMaskFor context: NSDraggingContext) -&gt; NSDragOperation {
+        return draggingOutSourceOperationMaskHandler?(self, session, context) ?? .generic
+    }
+    
+    @objc(draggingSession:willBeginAtPoint:) func draggingSession(_ session: NSDraggingSession, willBeginAt screenPoint: NSPoint) {
+        draggingOutWillBeginHandler?(self, session, screenPoint)
+    }
+    
+    @objc(draggingSession:movedToPoint:) func draggingSession(_ session: NSDraggingSession, movedTo screenPoint: NSPoint) {
+        draggingOutMovedHandler?(self, session, screenPoint)
+    }
+    
+    @objc(draggingSession:endedAtPoint:operation:) func draggingSession(_ session: NSDraggingSession, endedAt screenPoint: NSPoint, operation: NSDragOperation) {
+        draggingOutEndedHandler?(self, session, screenPoint, operation)
+    }
+    
+    // MARK: - Helper Methods
+    
+    // MARK: - Helper Methods
+    
+}
+
+
+// MARK: - Example
+
+extension DragView {
+    
+    /// 示例视图
+    static func exampleView() -&gt; DragView {
+        let dragDestinationView = DragView()
+        dragDestinationView.wantsLayer = true
+        dragDestinationView.layer?.backgroundColor = NSColor(white: 0.5, alpha: 0.1).cgColor
+        return dragDestinationView
+    }
+    
+    /// 支持拖入
+    func addSupportedForDraggingIn() {
+        let dragDestinationView = self
+        
+        dragDestinationView.registeredDraggedInTypes = [.tiff, .color, .string, .fileURL]
+        dragDestinationView.registeredDraggedInPathExtensions = ["png", "jpg", "jpeg"]
+        dragDestinationView.draggingInHandler = { destinationView, sender, state in
+            let isDragging = state == .entered ||  state == .updated
+            destinationView.layer?.borderColor = isDragging ? NSColor.white.cgColor : nil
+            destinationView.layer?.borderWidth = isDragging ? 2 : 0
+            return .generic
+        }
+        dragDestinationView.dragInOperationHandler = { destinationView, sender, perform in
+            // 识别内容
+            let classes: [AnyClass] = [NSImage.self, NSString.self, NSURL.self]
+            guard let pasteboardObjects = sender.draggingPasteboard.readObjects(forClasses: classes, options: nil), pasteboardObjects.count &gt; 0 else {
+                return false
+            }
+            
+            // 开始接受拖放数据
+            if perform {
+                var objects: [String] = []
+                pasteboardObjects.forEach { (object) in
+                    if let image = object as? NSImage {
+                        objects.append("┣━ 图像 \(image.className) =&gt; Size=\(image.size)")
+                    }
+                    else if let string = object as? NSString {
+                        objects.append("┣━ 字符串 \(string.className) =&gt; \(string)")
+                    }
+                    else if let url = object as? NSURL, url.isFileURL, (destinationView.registeredDraggedInPathExtensions?.contains(url.filePathURL!.pathExtension.lowercased()) ?? true) {
+                        objects.append("┣━ 文件 \(url.className) =&gt; \(url.filePathURL!.absoluteString.removingPercentEncoding!)")
+                    }
+                }
+                print("\n\n✌🏻✌🏻 已接受到 \(pasteboardObjects.count) 个内容，并识别出如下 \(objects.count) 个:\n  " + objects.joined(separator: "\n  "))
+            }
+            return true
+        }
+    }
+    
+    /// 支持拖出
+    func addSupportedForDraggingOut() {
+        let dragDestinationView = self
+        
+        dragDestinationView.registeredDraggedOutTypes = [.string, .tiff]
+        dragDestinationView.draggingOutOperationHandler = { destinationView, pasteboard, item, type in
+            switch type {
+            case .tiff:
+                let tiffData = destinationView.dataWithPDF(inside: destinationView.bounds)
+                item.setData(tiffData, forType: type)
+            case .string:
+                let string = "这是从 \(destinationView.className) 中拖出的文本"
+                guard let stringData = string.data(using: .utf8) else { return print("no data for string") }
+                item.setData(stringData, forType: type)
+            default:
+                return log.error("no data for unsupported type: \(type)")
+            }
+        }
+        dragDestinationView.draggingOutSourceOperationMaskHandler = { destinationView, session, context in return .generic }
+        dragDestinationView.draggingOutWillBeginHandler = { destinationView, session, willBeginAtScreenPoint in  }
+        dragDestinationView.draggingOutMovedHandler = { destinationView, session, movedToScreenPoint in  }
+        dragDestinationView.draggingOutEndedHandler = { destinationView, session, endedAtScreenPoint, operation in  }
+    }
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>18CA9EAC-AFD4-4E43-971D-66D0D20D5F57</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】DragView: 通用拖拽类模板 及使用示例</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

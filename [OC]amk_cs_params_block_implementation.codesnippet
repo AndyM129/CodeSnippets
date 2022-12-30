@@ -21,7 +21,7 @@ if (paramsBlock) {
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSDictionary: ParamsBlock 实现</string>
+	<string>【OC】NSDictionary: ParamsBlock 实现</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_table_view_data_source</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: NSTableViewDataSource
+
+/// 显示的行数
+@objc func numberOfRows(in tableView: NSTableView) -&gt; Int {
+    return 100
+}
+
+/// 处理数据排序
+@objc func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
+    log.debug("sortDescriptorsDidChange", context: ["oldDescriptors":oldDescriptors])
+    guard let sortDescriptor = tableView.sortDescriptors.first else { return log.error("sortDescriptors 为空") }
+    
+    if sortDescriptor.key == TableColumnTitle.label {
+        //if sortDescriptor.ascending { fileInfos?.sort { $0.localizedName ?? "" &lt; $1.localizedName ?? "" } }
+        //else { fileInfos?.sort { $0.localizedName ?? "" &gt; $1.localizedName ?? "" } }
+    } else if sortDescriptor.key == TableColumnTitle.textField {
+        //if sortDescriptor.ascending { fileInfos?.sort { $0.contentModificationDate! &lt; $1.contentModificationDate! } }
+        //else { fileInfos?.sort { $0.contentModificationDate! &gt; $1.contentModificationDate! } }
+    } else { return }
+    tableView.reloadData()
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91245303-9EE8-44C7-AFA8-EE05648A03B5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTableViewDataSource: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_wkn_mock_response_object</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#if defined(WK_TARGET_DEV) || defined(WK_TARGET_QA)
+
+// @ANDY_DEBUG
+- (NSDictionary *)mock_responseObject {
+    NSMutableDictionary *responseObject = @{}.mutableCopy;
+    responseObject[@"status"] = @{}.mutableCopy;
+    responseObject[@"status"][@"code"] = @0;
+    responseObject[@"status"][@"msg"] = @"";
+    responseObject[@"data"] = @{}.mutableCopy;
+    responseObject[@"data"][@"total"] = @"45";
+    responseObject[@"data"][@"list"] = @[].mutableCopy;
+    for (int i=0; i&lt;10; i++) {
+        [(NSMutableArray *)responseObject[@"data"][@"list"] addObject:({
+            NSMutableDictionary *item = @{}.mutableCopy;
+            item[@"key"] = @"value";
+            item;
+        })];
+    }
+    return responseObject;
+}
+
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F0D4B2D-761F-4373-B1EF-0534847BECBA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (NSDictionary *)mock_responseObject { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSDictionary: Mock 请求结果</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

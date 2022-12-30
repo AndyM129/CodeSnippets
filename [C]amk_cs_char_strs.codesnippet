@@ -6,8 +6,7 @@
 	<string>amk_cs_char_strs</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>char *strs[] = { &lt;#"hello", "world",#&gt; };

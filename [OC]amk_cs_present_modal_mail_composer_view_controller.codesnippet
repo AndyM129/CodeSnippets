@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_present_modal_mail_composer_view_controller_animated</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//#import &lt;MessageUI/MessageUI.h&gt;
+- (void)presentModalMailComposerViewControllerAnimated:(BOOL)animated {
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *viewController = [MFMailComposeViewController.alloc init];
+        viewController.mailComposeDelegate = self;
+        
+        [viewController setSubject:&lt;#Subject#&gt;];
+        [viewController setMessageBody:&lt;#Body#&gt; isHTML:YES];
+        [viewController setToRecipients:@[&lt;#Recipients#&gt;]];
+        
+        [self presentViewController:viewController animated:animated completion:nil];
+    } else {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"&lt;#Cannot Send Mail Message#&gt;" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FD7F9DBD-16A7-43D7-970F-AB70DDCEB1BF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)presentModalMailComposerViewControllerAnimated:(BOOL)animated { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】MFMailComposeViewController: 定义方法 以调起系统邮件发送页</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -3,81 +3,94 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_anyobject_mark</string>
+	<string>amk_cs_ui_view_controller_mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Properties
+	<string>// MARK: - Deinit
 
+deinit {
     
-    // MARK: - Init Methods
-    
-    deinit {
-        
-    }
-    
-    
-    // MARK: - Life Circle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+}
 
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-    }
-    
-    // MARK: - Data &amp; Networking
-    
-    // MARK: - Layout Subviews
+// MARK: - Init Methods
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-    }
+init() {
+    super.init(nibName: nil, bundle: nil)
+}
+
+required init?(coder: NSCoder) {
+    super.init(coder: coder)
+}
+
+// MARK: - Life Circle
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "Title"
+    automaticallyAdjustsScrollViewInsets = false;
+    view.backgroundColor = view.backgroundColor ?? UIColor.white
+
+}
+
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-    }
+}
+
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
     
-    // MARK: - Public Methods
+}
+
+override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
     
-    // MARK: - Private Methods
+}
+
+override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
     
-    // MARK: - Notifications
-        
-    // MARK: - Protocols
-        
-    // MARK: - Helper Methods
-    </string>
+}
+
+// MARK: - Getters &amp; Setters
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    
+}
+
+override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+}
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>008862C2-9DA9-4625-B7AB-F727301F261D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】AnyObject: MARK</string>
+	<string>【Swift】UIViewController: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

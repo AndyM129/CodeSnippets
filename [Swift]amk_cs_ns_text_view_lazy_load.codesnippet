@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_text_view_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var textView: NSTextView = {
+    let _textView = NSTextView()
+    _textView.drawsBackground = true
+    _textView.backgroundColor = NSColor(white: 1, alpha: 0.1)
+    _textView.isEditable = true
+    _textView.isSelectable = true
+    _textView.isVerticallyResizable = true
+    _textView.isHorizontallyResizable = true
+    _textView.font = NSFont.systemFont(ofSize: 16)
+    
+    let _scrollView = NSScrollView()
+    _scrollView.drawsBackground = false
+    _scrollView.hasVerticalScroller = true
+    _scrollView.borderType = .noBorder
+    _scrollView.contentView.documentView = _textView
+    
+    view.addSubview(_scrollView)
+    return _textView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3D706F29-E4BF-4C6D-A18C-BEFAA98BA280</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTextView: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

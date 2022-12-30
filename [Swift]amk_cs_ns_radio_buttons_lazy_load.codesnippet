@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_radio_buttons_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var radioButtons: [NSButton] = {
+    let defaultIndex = 3
+    let titles = ["A. xxx", "B. yyy", "C. zzz", "D. Above all"]
+    var radioButtons: [NSButton] = []
+    for (index, title) in titles.enumerated() {
+        let button = NSButton(title: title, target: self, action: #selector(radioButtonChanged))
+        button.tag = index
+        button.state = index == defaultIndex ? NSControl.StateValue.on : NSControl.StateValue.off // 设置默认值
+        button.setButtonType(.radio)
+        view.addSubview(button)
+        //button.snp.makeConstraints { make in
+        //    make.left.equalTo(index == 0 ? radioLabel.snp.right : radioButtons[index-1].snp.right).offset(10)
+        //    make.top.equalTo(radioLabel)
+        //}
+        radioButtons.append(button)
+    }
+    return radioButtons
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>832739BA-5B60-458E-B211-2180B0F498FC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSButton: 懒加载 代码框架 - RadioButtons 组</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

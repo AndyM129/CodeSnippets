@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_window_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var windowController: NSWindowController = {
+    let windowController = NSWindowController()
+    return windowController
+}()
+
+lazy var window: NSWindow = {
+    let contentRect: NSRect = NSRect(x: 0, y: 0, width: 600, height: 400)
+    let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable]
+    let window = NSWindow(contentRect: contentRect, styleMask: styleMask, backing: .buffered, defer: false)
+    window.title = "NSWindowController Example"
+    
+    // 与 NSWindowController 绑定，以避免「窗口关闭时 被释放」的问题
+    window.windowController = windowController
+    windowController.window = window
+    return window
+    
+    // 后需调用如下方法 以显示窗口
+    //window.makeKeyAndOrderFront(self)
+    //window.center()
+}()
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14266DF0-7152-4E5C-A59C-91E9514E39D1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSWindow: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

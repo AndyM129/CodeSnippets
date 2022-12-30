@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_property_assign_readwrite</string>
+	<string>amk_cs_property_assign_readwrite_ns_integer</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, assign, readwrite) &lt;#NSInteger#&gt; &lt;#value#&gt;;</string>
+	<string>@property (nonatomic, assign, readwrite) &lt;#NSInteger#&gt; &lt;#value#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2C490250-CCC3-444D-8014-E2BD711434C7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: @property(nonatomic, assign, readwrite)</string>
+	<string>【OC】NSObject: @property (nonatomic, assign, readwrite) &lt;#NSInteger#&gt; &lt;#value#&gt;;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

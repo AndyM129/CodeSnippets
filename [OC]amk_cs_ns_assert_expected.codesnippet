@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>NSAssert(&lt;#ExpectedCondition#&gt;, @"Expected &lt;#condition#&gt;, got: %@", &lt;#GotValue#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSAssert: 不符预期</string>
+	<string>【OC】NSAssert: 不符预期</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

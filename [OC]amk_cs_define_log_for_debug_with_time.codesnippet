@@ -9,7 +9,9 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#ifndef __OPTIMIZE__
+	<string>#import &lt;Foundation/Foundation.h&gt;
+
+#ifndef __OPTIMIZE__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-function"
 static NSString *_AMKLogTimeStringWithDate(NSDate *date) {
@@ -32,9 +34,9 @@ static NSString *_AMKLogTimeStringWithDate(NSDate *date) {
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>#define NSLog(FORMAT, ...)    fprintf(stderr,"%s %s Line %d: %s\n", _AMKLogTimeStringWithDate(NSDate.date).UTF8String, __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>define: debug log with time</string>
+	<string>【OC】#define NSLog(FORMAT, ...) ... （带时间）</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

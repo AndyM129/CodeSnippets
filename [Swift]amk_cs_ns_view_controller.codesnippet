@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_view_controller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Deinit
+
+deinit {
+    NotificationCenter.default.removeObserver(self)
+}
+
+// MARK: - Init Methods
+
+// MARK: - Life Circle
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    view.wantsLayer = true
+    view.layer?.backgroundColor = NSColor(red:0.46, green:0.45, blue:0.88, alpha:0.3).cgColor
+    NotificationCenter.default.addObserver(self, selector: #selector(handleWindowDidBecomeKeyNotification), name: NSWindow.didBecomeKeyNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(handleWindowDidBecomeMainNotification), name: NSWindow.didBecomeMainNotification, object: nil)
+}
+
+override func viewWillAppear() {
+    super.viewWillAppear()
+    
+}
+
+override func viewDidAppear() {
+    super.viewDidAppear()
+    
+}
+
+override func viewWillDisappear() {
+    super.viewWillDisappear()
+    
+}
+
+override func viewDidDisappear() {
+    super.viewDidDisappear()
+    
+}
+
+// MARK: - Getters &amp; Setters
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+override func viewWillLayout() {
+    super.viewWillLayout()
+    
+}
+
+override func viewDidLayout() {
+    super.viewDidLayout()
+    
+}
+
+override func updateViewConstraints() {
+    super.updateViewConstraints()
+    
+}
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+@objc func handleWindowDidBecomeKeyNotification(_ noti: NSNotification? = nil) {
+    print("handleWindowDidBecomeKeyNotification(_:) =&gt;", ["noti":noti])
+    
+    // 当窗口切换回来后，让指定视图成为第一响应者
+    //guard let keyWindow = noti?.object as? NSWindow, let window = view.window else { return }
+    //if keyWindow == window { window.makeFirstResponder(&lt;#T##responder: NSResponder?##NSResponder?#&gt;) }
+}
+
+@objc func handleWindowDidBecomeMainNotification(_ noti: NSNotification? = nil) {
+    print("handleWindowDidBecomeMainNotification(_:) =&gt;", ["noti":noti])
+    
+    // 当窗口切换回来后，让指定视图成为第一响应者
+    //guard let mainWindow = noti?.object as? NSWindow, let window = view.window else { return }
+    //if mainWindow == window { window.makeFirstResponder(&lt;#T##responder: NSResponder?##NSResponder?#&gt;) }
+}
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E62904B6-61E2-4340-972D-1825C7DBB011</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSViewController: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

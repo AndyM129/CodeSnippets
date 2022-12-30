@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_alert_controller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let title = "Title"
+let message = "Message"
+let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+alertController.addAction(UIAlertAction(title: "Default", style: .default, handler: { alertAction in
+    print("点击了：\(alertAction)")
+}))
+alertController.addAction(UIAlertAction(title: "Destructive", style: .destructive, handler: { alertAction in
+    print("点击了：\(alertAction)")
+}))
+alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+UIApplication.shared.delegate?.window??.rootViewController?.present(alertController, animated: true)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4FD9BEDC-24E5-47A9-B55A-34C8E4E14B59</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIAlertController: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

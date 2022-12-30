@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Deinit
+
+deinit {
+    
+}
+
+// MARK: - Init Methods
+
+override init(frame: CGRect) {
+    super.init(frame: frame)
+}
+
+required init?(coder: NSCoder) {
+    super.init(coder: coder)
+}
+
+// MARK: - Getters &amp; Setters
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+override class var requiresConstraintBasedLayout: Bool {
+    return true
+}
+
+override func updateConstraints() {
+    
+    //according to apple super should be called at end of method
+    super.updateConstraints()
+}
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C6243043-98A6-4727-AEF6-12FAC9DFFD6B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIView: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

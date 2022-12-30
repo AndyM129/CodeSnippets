@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>objc_getAssociatedObject(self, @selector(&lt;#getter#&gt;));</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Runtime: 关联对象的获取</string>
+	<string>【OC】Runtime: 关联对象的获取</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

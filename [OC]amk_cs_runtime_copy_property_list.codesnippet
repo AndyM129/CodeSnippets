@@ -24,7 +24,7 @@ for (int i=0; i&lt;propertyListCount; i++) {
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Runtime: 获取属性列表</string>
+	<string>【OC】Runtime: 获取属性列表</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

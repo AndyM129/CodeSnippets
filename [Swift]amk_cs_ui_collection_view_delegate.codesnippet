@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_collection_view_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: UICollectionViewDelegate
+
+func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    print("collectionView - willDisplay: \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    print("collectionView - didEndDisplaying: \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
+    print("collectionView - willDisplaySupplementaryView: \(elementKind) at \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, didEndDisplayingSupplementaryView view: UICollectionReusableView, forElementOfKind elementKind: String, at indexPath: IndexPath) {
+    print("collectionView - didEndDisplayingSupplementaryView: \(elementKind) at \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -&gt; Bool {
+    print("collectionView - shouldHighlightItemAt: \(indexPath)")
+    return true
+}
+
+func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+    print("collectionView - didHighlightItemAt: \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -&gt; Bool {
+    print("collectionView - shouldSelectItemAt: \(indexPath)")
+    return true
+}
+
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    print("collectionView - didSelectItemAt: \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    print("collectionView - didDeselectItemAt: \(indexPath)")
+}
+
+func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+    print("collectionView - didUnhighlightItemAt: \(indexPath)")
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>34531550-9E9E-4622-8C44-FA5C9B44DE4C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UICollectionViewDelegate: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

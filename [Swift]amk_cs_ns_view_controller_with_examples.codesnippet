@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_view_controller_with_examples</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Deinit
+
+deinit {
+    
+}
+
+// MARK: - Init Methods
+
+// MARK: - Life Circle
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    layoutExampleButtons()
+}
+
+override func viewWillAppear() {
+    super.viewWillAppear()
+    
+}
+
+override func viewDidAppear() {
+    super.viewDidAppear()
+    
+}
+
+override func viewWillDisappear() {
+    super.viewWillDisappear()
+    
+}
+
+override func viewDidDisappear() {
+    super.viewDidDisappear()
+    
+}
+
+// MARK: - Getters &amp; Setters
+
+class Example {
+    
+    enum Title: String {
+        case events = "Example"
+    }
+    
+    typealias ViewControllerBlock = ()-&gt;NSViewController?
+    
+    var title: Title
+    var viewControllerBlock: ViewControllerBlock?
+    
+    init(title: Title, viewControllerBlock: ViewControllerBlock?) {
+        self.title = title
+        self.viewControllerBlock = viewControllerBlock
+    }
+}
+
+lazy var examples: [Example] = [
+    Example(title: .events, viewControllerBlock: nil),
+]
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+func layoutExampleButtons() {
+    var lastExampleButton: NSButton?
+    for (index, example) in examples.enumerated() {
+        let exampleButton = NSButton(title: "\(index+1)、\(example.title.rawValue)", target: self, action: #selector(exampleButtonClicked))
+        exampleButton.tag = index
+        exampleButton.bezelStyle = .rounded
+        exampleButton.setButtonType(.momentaryLight)
+        view.addSubview(exampleButton)
+        exampleButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(lastExampleButton == nil ? view.snp.top : lastExampleButton!.snp.bottom).offset(20)
+        }
+        lastExampleButton = exampleButton
+    }
+}
+
+override func viewWillLayout() {
+    super.viewWillLayout()
+    
+}
+
+override func viewDidLayout() {
+    super.viewDidLayout()
+    
+}
+
+override func updateViewConstraints() {
+    super.updateViewConstraints()
+    
+}
+
+// MARK: - Action Methods
+
+@objc func exampleButtonClicked(_ sender: NSButton) {
+    let example = examples[sender.tag]
+    guard let viewControllerBlock = example.viewControllerBlock else { return }
+    guard let viewController = viewControllerBlock() else { return }
+    showWindow(title: example.title.rawValue, contentViewController: viewController)
+}
+
+// 新建窗口 并显示
+@discardableResult
+func showWindow(title: String?, contentViewController: NSViewController) -&gt; NSWindowController{
+    let contentRect: NSRect = NSRect(x: 0, y: 0, width: 600, height: 400)
+    let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable]
+    let windowController = NSWindowController()
+    windowController.window = NSWindow(contentRect: contentRect, styleMask: styleMask, backing: .buffered, defer: false)
+    windowController.window?.windowController = windowController
+    windowController.window?.title = title ?? (NSApp.mainWindow ?? NSApp.windows.first!).title
+    windowController.window?.contentViewController = contentViewController
+    windowController.showWindow(self)
+    windowController.window?.center()
+    return windowController
+}
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1E568D5B-87AC-4AE9-BBB8-08E7FE18600D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSViewController: 代码框架 - 示例列表页</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

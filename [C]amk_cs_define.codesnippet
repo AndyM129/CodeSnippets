@@ -6,9 +6,7 @@
 	<string>amk_cs_define</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
-		<string>CodeBlock</string>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#define &lt;#new#&gt; &lt;#existing#&gt;</string>
@@ -19,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>宏定义</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【C】#define</string>
+	<string>【C】#define &lt;#new#&gt; &lt;#existing#&gt;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

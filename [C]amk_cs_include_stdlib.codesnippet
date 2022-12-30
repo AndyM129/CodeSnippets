@@ -6,7 +6,7 @@
 	<string>amk_cs_include_stdlib</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#include &lt;stdlib.h&gt;</string>

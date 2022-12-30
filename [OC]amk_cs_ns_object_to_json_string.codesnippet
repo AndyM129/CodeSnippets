@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_object_to_json_string</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>id JSONObject = @{};
+NSError *error = [NSJSONSerialization isValidJSONObject:JSONObject] ? nil : [NSError errorWithDomain:@"" code:-1 userInfo:@{NSLocalizedDescriptionKey: @"Is not valid JSONObject"}];
+NSData *JSONData = error ? nil : [NSJSONSerialization dataWithJSONObject:JSONObject options:NSJSONWritingPrettyPrinted error:&amp;error];
+NSString *JSONString = error ? nil : [NSString.alloc initWithData:JSONData encoding:NSUTF8StringEncoding];
+NSLog(@"to JSONString: %@", error ?: JSONString);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BD85DE0C-3443-4EF3-823F-C093B1EECFF3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 转为 JSON 字符串</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

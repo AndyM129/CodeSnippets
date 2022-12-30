@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_tab_view_controller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let tabViewController = NSTabViewController()
+tabViewController.transitionOptions = .crossfade
+tabViewController.addChild({
+    let viewController = CustomContentViewController()
+    viewController.title = "Tab 0"
+    viewController.view.layer?.backgroundColor = NSColor(red:0.86, green:0.39, blue:0.37, alpha:1.00).cgColor
+    return viewController
+}())
+tabViewController.addChild({
+    let viewController = CustomContentViewController()
+    viewController.title = "Tab 1"
+    viewController.view.layer?.backgroundColor = NSColor(red:0.22, green:0.68, blue:0.38, alpha:1.00).cgColor
+    return viewController
+}())
+tabViewController.addChild({
+    let viewController = CustomContentViewController()
+    viewController.title = "Tab 2"
+    viewController.view.layer?.backgroundColor = NSColor(red:0.29, green:0.42, blue:0.98, alpha:1.00).cgColor
+    return viewController
+}())</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2D3F8EF0-D625-4F11-80DD-45EAA255605A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTabViewController: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

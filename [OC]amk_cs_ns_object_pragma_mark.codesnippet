@@ -36,8 +36,6 @@
 
 #pragma mark - Protocol
 
-#pragma mark - Overrides
-
 #pragma mark - Helper Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A4CE10C7-6A31-49E3-9469-16757468A000</string>
@@ -46,7 +44,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: 代码框架</string>
+	<string>【OC】NSObject: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

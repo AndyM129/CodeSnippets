@@ -6,7 +6,7 @@
 	<string>amk_cs_ui_table_view_data_source_protocol_implementation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark UITableViewDataSource
@@ -36,10 +36,12 @@
 	<string>63B3255E-D0A3-4ADB-AA32-D5C96B3138FB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>UITableViewDataSource ...</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView: 数据源协议实现</string>
+	<string>【OC】UITableView: 数据源协议实现</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

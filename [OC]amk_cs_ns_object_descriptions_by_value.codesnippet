@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSDictionary *)xxxDescriptionsByValue {
+	<string>+ (NSDictionary *)&lt;#object#&gt;DescriptionsByValue {
     static dispatch_once_t once;
     static NSDictionary *descriptionMap;
     dispatch_once(&amp;once, ^{
@@ -26,9 +26,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>+ (NSDictionary *)&lt;#object#&gt;DescriptionsByValue { ... }</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: DescriptionsByValue</string>
+	<string>【OC】NSObject: DescriptionsByValue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

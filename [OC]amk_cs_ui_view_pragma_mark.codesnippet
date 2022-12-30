@@ -39,9 +39,7 @@
     [super updateConstraints];
 }
 
-#pragma mark - Public Methods
-
-#pragma mark - Private Methods
+#pragma mark - Action Methods
 
 #pragma mark - Notifications
 
@@ -49,17 +47,17 @@
 
 #pragma mark - Protocol
 
-#pragma mark - Overrides
-
 #pragma mark - Helper Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D5FC419B-8204-4F1E-9280-E273E053D675</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIView: 代码框架</string>
+	<string>【OC】UIView: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

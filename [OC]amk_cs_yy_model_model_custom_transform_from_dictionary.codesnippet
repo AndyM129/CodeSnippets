@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_yy_model_model_custom_transform_from_dictionary</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A83A3AF2-0EC1-438B-9051-DCCA11A57B91</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】YYModel: 校验 Json -&gt; Model 的结果是否有效</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

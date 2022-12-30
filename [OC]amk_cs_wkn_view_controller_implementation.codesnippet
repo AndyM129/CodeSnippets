@@ -110,8 +110,6 @@
 
 #pragma mark - Protocol
 
-#pragma mark - Overrides
-
 #pragma mark - Helper Methods
 
 @end
@@ -154,7 +152,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>WKNViewController: 代码框架</string>
+	<string>【OC】WKNViewController: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

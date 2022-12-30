@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>(void(^_Nullable)(NSMutableDictionary *_Nullable params))paramsBlock</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSDictionary: ParamsBlock 参数声明</string>
+	<string>【OC】NSDictionary: ParamsBlock 参数声明</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

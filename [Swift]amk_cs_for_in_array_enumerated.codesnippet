@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_for_in_array_enumerated</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>for (index, item) in &lt;#array#&gt;.enumerated() {
+    print("Index \(index) =&gt; \(item)")
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1E942B0A-444A-4811-8B9A-6770A80979BD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>通过枚举 遍历数组下标&amp;元素</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】for (index, item) in array.enumerated() { ... }</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

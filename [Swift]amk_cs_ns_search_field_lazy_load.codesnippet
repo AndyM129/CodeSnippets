@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_search_field_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var searchBar: NSSearchField = {
+    let searchBar = NSSearchField()
+    searchBar.placeholderString = "NSSearchField with placeholderString"
+    searchBar.target = self
+    searchBar.action = #selector(searchBarAction)
+    //@objc func searchBarAction(sender: Any? = nil) {
+    //    print("searchBarAction: \(sender ?? "") =&gt; \(searchBar.stringValue)")
+    //}
+    
+    // 获取搜索按钮 以绑定事件
+    if let searchFieldCell = searchBar.cell as? NSSearchFieldCell, let searchButtonCell = searchFieldCell.searchButtonCell {
+        searchButtonCell.target = self
+        searchButtonCell.action = #selector(searchButtonCellDidClicked)
+        //@objc func searchButtonCellDidClicked(sender: Any? = nil) {
+        //    print("searchButtonCellDidClicked: \(sender ?? "")")
+        //}
+    }
+    
+    // 获取清空按钮 以绑定事件
+    if let searchFieldCell = searchBar.cell as? NSSearchFieldCell, let cancelButtonCell = searchFieldCell.cancelButtonCell {
+        cancelButtonCell.target = self
+        cancelButtonCell.action = #selector(cancelButtonCellDidClicked)
+        //@objc func cancelButtonCellDidClicked(sender: Any? = nil) {
+        //    print("cancelButtonCellDidClicked: \(sender ?? "")")
+        //    searchBar.stringValue = ""
+        //}
+    }
+    
+    view.addSubview(searchBar)
+    searchBar.snp.makeConstraints { make in
+        make.left.equalTo(imageView.snp.right).offset(20)
+        make.right.equalToSuperview().inset(20)
+        make.top.equalTo(segmentedControl.snp.bottom).offset(20)
+    }
+    return searchBar
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C72CCE50-3A64-47CD-9FA0-B2037330BD17</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSSearchField: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

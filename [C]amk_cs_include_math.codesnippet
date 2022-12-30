@@ -6,8 +6,7 @@
 	<string>amk_cs_include_math</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#include &lt;math.h&gt;</string>

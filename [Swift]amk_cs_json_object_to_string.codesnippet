@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_json_object_to_string</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let object = ["AAA": 111, "BBB": 222, "CCC": 333]
+let jsonData = try? JSONSerialization.data(withJSONObject: object, options: .prettyPrinted)
+let jsonString = String(data: jsonData ?? Data(), encoding: .utf8)
+print("\(object)\n=&gt; \(String(describing: jsonString))\n\n\n")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>41FBDC04-5A69-4708-8824-9D511A5DD9C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】JSONSerialization: jsonObject -&gt; jsonString</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

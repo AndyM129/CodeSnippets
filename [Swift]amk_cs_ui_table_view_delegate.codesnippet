@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: UITableViewDelegate
+    
+func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+    return 40
+}
+
+func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
+    return 20
+}
+
+func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+    return 60
+}
+
+func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+    let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(UITableViewHeaderFooterView.self))
+    headerView?.contentView.backgroundColor = UIColor.lightGray
+    return headerView
+}
+
+func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
+    let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(UITableViewHeaderFooterView.self))
+    footerView?.contentView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+    return footerView
+}
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    print("tableViewDidSelectRow: \(tableView), \(indexPath)")
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FEF97125-F8AC-4E60-AA00-9190EF8AC233</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UITableViewDelegate 的默认实现</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITableViewDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

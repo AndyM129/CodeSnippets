@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_window_titlebar_add_button</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 在窗口标题区域添加按钮
+if let window = NSApplication.shared.windows.first {
+    if let titlebar = window.standardWindowButton(.closeButton)?.superview {
+        let titlebarButton = NSButton(title: "Titlebar Button", target: self, action: #selector(titlebarButtonClicked))
+        titlebarButton.bezelStyle = .rounded
+        titlebarButton.setButtonType(.momentaryLight)
+        titlebar.addSubview(titlebarButton)
+        titlebarButton.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().inset(10)
+        }
+        
+        //@objc func titlebarButtonClicked(sender: Any? = nil) {
+        //    log.debug("", context: ["sender":sender])
+        //}
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DF8C98D-51DE-4575-B90C-628CC0E94981</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSWindow: 在标题区 添加按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_date_formatter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSDateFormatter *dateFormatter = [NSDateFormatter.alloc init];
+dateFormatter.timeZone = NSTimeZone.systemTimeZone;
+dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+NSLog(@"%@", [dateFormatter stringFromDate:NSDate.date]);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49638B88-6832-42CE-BF18-9AA3CEFEE859</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSDate: 格式化字符串</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

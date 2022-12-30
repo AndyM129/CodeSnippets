@@ -6,7 +6,7 @@
 	<string>amk_cs_include_string</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>Preprocessor</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#include &lt;string.h&gt;</string>

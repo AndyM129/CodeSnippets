@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_method_caller</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface NSObject (AMKMethodCaller)
++ (NSString *)amk_methodCaller;
+- (NSString *)amk_methodCaller;
+@end
+
+@implementation NSObject (AMKMethodCaller)
+
++ (NSString *)amk_methodCaller {
+    NSArray *symbols = [NSThread callStackSymbols];
+    NSInteger maxCount = symbols.count;
+    NSString *secondSymbol = maxCount &gt; 3 ? symbols[3] : (maxCount &gt; 1 ? symbols[1] : [symbols firstObject]);
+    if (secondSymbol.length == 0) {
+        return @"";
+    }
+    NSString *pattern = @"[+-]\\[.{0,}\\]";
+    NSError *error;
+    NSRegularExpression *express = [NSRegularExpression regularExpressionWithPattern:pattern options:kNilOptions error:&amp;error];
+    if (error) {
+        NSLog(@"Error: %@", error);
+        return @"";
+    }
+    NSTextCheckingResult *checkResult = [[express matchesInString:secondSymbol options:NSMatchingReportCompletion range:NSMakeRange(0, secondSymbol.length)] lastObject];
+    NSString *findStr = [secondSymbol substringWithRange:checkResult.range];
+    return findStr ?: @"";
+}
+
+- (NSString *)amk_methodCaller {
+    return self.class.amk_methodCaller;
+}
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>773A3D4C-7BA7-4F65-8B95-5650EFAF5592</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: MethodCaller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

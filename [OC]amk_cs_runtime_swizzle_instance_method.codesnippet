@@ -10,27 +10,28 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// #import &lt;objc/runtime.h&gt;
-BOOL(^swizzleInstanceMethod)(SEL, SEL) = ^BOOL(SEL originalSel, SEL newSel) {
-    Method originalMethod = class_getInstanceMethod(self, originalSel);
-    Method newMethod = class_getInstanceMethod(self, newSel);
-    if (!originalMethod || !newMethod) return NO;
+BOOL(^swizzleInstanceMethod)(Class, SEL, SEL) = ^BOOL(Class class, SEL originalSelector, SEL swizzledSelector) {
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
     
-    class_addMethod(self, originalSel, class_getMethodImplementation(self, originalSel), method_getTypeEncoding(originalMethod));
-    class_addMethod(self, newSel, class_getMethodImplementation(self, newSel), method_getTypeEncoding(newMethod));
-    method_exchangeImplementations(class_getInstanceMethod(self, originalSel), class_getInstanceMethod(self, newSel));
+    BOOL didAddMethod = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    if (didAddMethod) {
+        class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
     return YES;
 };
 
-swizzleInstanceMethod(&lt;#originalSel#&gt;, &lt;#newSel#&gt;);
-</string>
+swizzleInstanceMethod(&lt;#class#&gt;, &lt;#originalSelector#&gt;, &lt;#swizzledSelector#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>70A01AFF-C188-4330-9C7B-0A515450614E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>swizzleInstanceMethod(&lt;#class#&gt;, &lt;#originalSelector#&gt;, &lt;#swizzledSelector#&gt;);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Runtime: 交换实例方法 </string>
+	<string>【OC】Runtime: 交换实例方法 </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

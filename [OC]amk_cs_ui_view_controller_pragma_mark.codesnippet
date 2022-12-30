@@ -64,17 +64,17 @@
 
 #pragma mark - Protocol
 
-#pragma mark - Overrides
-
 #pragma mark - Helper Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7FD93911-471A-4FE6-8AC6-4C7B900602AE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIViewController: 代码框架</string>
+	<string>【OC】UIViewController: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_string_with_format_arguments</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>va_list arguments;
+va_start(arguments, format);
+NSString *string = [[NSString alloc] initWithFormat:format arguments:arguments];
+va_end(arguments);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3B352682-3257-4A10-BEA6-18768F1976C6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[[NSString alloc] initWithFormat:format arguments:arguments];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSString: 基于格式化及可变参数 初始化实例</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

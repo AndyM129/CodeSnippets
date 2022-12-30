@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_define_available_ios</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define AVAILABLE_IOS(v)                            (^BOOL(){if (@available(iOS v, *)) {return YES;} else {return NO;}}())
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70448384-AB86-4D6E-B6D8-D63417A9525A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>#define AVAILABLE_IOS(v)    (^BOOL(){if (@available(iOS v, *)) {return YES;} else {return NO;}}())</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】#define AVAILABLE_IOS(v) ...</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

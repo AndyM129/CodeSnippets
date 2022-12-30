@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_layer_add_gradient_layer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let gradientLayer = CAGradientLayer()
+gradientLayer.frame = &lt;#view#&gt;.bounds
+gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+gradientLayer.colors = [UIColor.red.cgColor, UIColor.orange.cgColor]
+&lt;#view#&gt;.layer.addSublayer(gradientLayer)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3D616E6B-04FF-455F-996D-E0E7D80B6FC0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIVIew: 添加 CAGradientLayer 渐变层</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

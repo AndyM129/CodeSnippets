@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_tab_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var tabView: NSTabView = {
+    let tabView = NSTabView()
+    tabView.tabViewType = .topTabsBezelBorder
+    
+    tabView.addTabViewItem({
+        let viewController = CustomViewController()
+        viewController.view.wantsLayer = true
+        viewController.view.layer?.backgroundColor = NSColor(red:0.29, green:0.42, blue:0.98, alpha:0.5).cgColor
+        
+        let tabViewItem = NSTabViewItem(viewController: viewController)
+        tabViewItem.label = "Tab 0"
+        return tabViewItem
+    }())
+    tabView.addTabViewItem({
+        let viewController = CustomViewController()
+        viewController.view.wantsLayer = true
+        viewController.view.layer?.backgroundColor = NSColor(red:0.29, green:0.42, blue:0.98, alpha:1).cgColor
+        
+        let tabViewItem = NSTabViewItem(viewController: viewController)
+        tabViewItem.label = "Tab 1"
+        return tabViewItem
+    }())
+    
+    view.addSubview(tabView)
+    return tabView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>38F84C12-06FF-45C2-8159-27E139A4FC9E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTabView: 懒加载 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

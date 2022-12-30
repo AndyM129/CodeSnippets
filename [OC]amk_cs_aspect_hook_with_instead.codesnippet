@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_aspect_hook_with_instead</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#Class#&gt; aspect_hookSelector:@selector(&lt;#selector#&gt;) withOptions:AspectPositionInstead usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
+    id res;
+    NSInvocation *invocation = info.originalInvocation;
+    [invocation invoke];
+    [invocation getReturnValue:&amp;res];    
+} error:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9555B75D-50C8-44A3-B220-12AA326F3D51</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Aspect: hook with instead</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_wkn_network_task_interface</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// &lt;#类说明#&gt;
+@interface &lt;#WKNXxxNetworkTask#&gt; : BDEBaseNetworkTask
+
+/// &lt;#请求说明#&gt;
+/// 详见：&lt;#http://xxx#&gt;
+- (void)requestWithParams:(id)params completion:(BDEBaseNetworkCompletionBlock _Nullable)completion;
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2C0CA1C1-D67F-4653-898B-2DB7FFBF1F24</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】BDEBaseNetworkTask: 类&amp;接口声明</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

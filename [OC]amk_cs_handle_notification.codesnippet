@@ -19,7 +19,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSObject: -handleNotification:</string>
+	<string>【OC】NSObject: - (void)handle&lt;#NotificationName#&gt;:(NSNotification *)noti { ... }</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

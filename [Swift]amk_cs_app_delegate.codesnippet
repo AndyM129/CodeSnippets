@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_app_delegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Life Circle
+
+// MARK: - Getters &amp; Setters
+
+lazy var dockMenu: NSMenu = {
+    let dockMenu = NSMenu(title: "Dock Menu Title")
+    dockMenu.addItem(withTitle: "Dock Menu Item 0", action: #selector(dockMenuItemClicked), keyEquivalent: "")
+    dockMenu.addItem(withTitle: "Dock Menu Item 1", action: #selector(dockMenuItemClicked), keyEquivalent: "")
+    dockMenu.items.last?.submenu = {
+        let submenu = NSMenu(title: "Submenu Title")
+        submenu.addItem(withTitle: "Submenu Item 0", action: #selector(dockMenuItemClicked), keyEquivalent: "")
+        submenu.addItem(withTitle: "Submenu Item 1", action: #selector(dockMenuItemClicked), keyEquivalent: "")
+        return submenu
+    }()
+    return dockMenu
+}()
+        
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+    
+// MARK: - Action Methods
+
+@objc func dockMenuItemClicked(sender: Any? = nil) {
+    log.debug("", context: ["sender":sender])
+}
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: NSApplicationDelegate
+
+func applicationDidFinishLaunching(_ aNotification: Notification) {
+    log.debug("", context: ["aNotification":aNotification])
+}
+
+func applicationSupportsSecureRestorableState(_ app: NSApplication) -&gt; Bool {
+    return true
+}
+
+/// 关闭最后一个窗口时，终止程序
+//func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -&gt; Bool {
+//    return true
+//}
+
+/// 窗口关闭后，点击Dock栏图标 再次打开应用
+func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -&gt; Bool {
+    log.debug("", context: ["sender":sender, "hasVisibleWindows":flag])
+    NSApp.windows.first?.makeKeyAndOrderFront(self)
+    return true
+}
+
+/// 设置Dock菜单
+func applicationDockMenu(_ sender: NSApplication) -&gt; NSMenu? {
+    return dockMenu
+}
+
+func applicationWillTerminate(_ aNotification: Notification) {
+    log.debug("", context: ["aNotification":aNotification])
+}
+    
+// MARK: - Helper Methods
+    
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>750F7CF3-784A-43EE-AF00-A03F2744AD4B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】AppDelegate: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

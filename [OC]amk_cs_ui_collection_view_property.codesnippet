@@ -9,16 +9,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic, strong, readwrite, nullable) UICollectionView *collectionView;
+	<string>@property (nonatomic, strong, readwrite, nullable) UICollectionView *collectionView;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E5CC9C00-AEB2-4489-8F82-BE45055EC794</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>@property (nonatomic, strong, readwrite, nullable) UICollectionView *collectionView;</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UICollectionView: @property(nonatomic, strong, readwrite, nullable) </string>
+	<string>【OC】UICollectionView: @property(nonatomic, strong, readwrite, nullable) </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

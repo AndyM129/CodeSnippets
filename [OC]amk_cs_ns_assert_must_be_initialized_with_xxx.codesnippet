@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>NSAssert(NO, @"&lt;#Current class#&gt; must be initialized with &lt;#a path#&gt;. Use '&lt;#initWithPath:' or 'initWithPath:inlineThreshold:#&gt;' instead.");</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSAssert: 须通过指定方法初始化</string>
+	<string>【OC】NSAssert: 须通过指定方法初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

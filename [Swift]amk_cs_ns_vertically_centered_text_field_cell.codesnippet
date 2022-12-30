@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_vertically_centered_text_field_cell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class NSVerticallyCenteredTextFieldCell: NSTextFieldCell {
+    
+    override func drawingRect(forBounds theRect: NSRect) -&gt; NSRect {
+        var newRect:NSRect = super.drawingRect(forBounds: theRect)
+        let textSize:NSSize = self.cellSize(forBounds: theRect)
+        let heightDelta:CGFloat = newRect.size.height - textSize.height
+        if heightDelta &gt; 0 {
+            newRect.size.height = textSize.height
+            newRect.origin.y += heightDelta / 2
+        }
+        return newRect
+    }
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C2FE62BA-35F7-427D-A817-45B1F767029E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTextFieldCell: 自定义 文本竖向居中cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

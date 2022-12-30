@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_back_button_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var backButton: NSButton = {
+    let backButton = NSButton(image: NSImage(systemSymbolName: "chevron.backward", accessibilityDescription: nil)!, target: self, action: #selector(backButtonClicked))
+    backButton.bezelStyle = .rounded
+    backButton.setButtonType(.momentaryLight)
+    view.addSubview(backButton)
+    return backButton
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1F85C3FC-FA39-4E44-9D8F-D5767B7E1B45</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSButton: 懒加载 代码模板 - 返回按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

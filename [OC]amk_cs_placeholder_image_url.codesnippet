@@ -14,10 +14,12 @@
 	<string>1371FECE-B1A0-4BDA-A65F-82B1FF9F7AB7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>https://dummyimage.com/200x200/c5c5c5/8f8f8f&amp;text=Placeholder</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIImage: 占位图链接</string>
+	<string>【OC】UIImage: 占位图链接</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

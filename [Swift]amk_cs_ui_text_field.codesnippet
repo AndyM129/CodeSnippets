@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_text_field</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let textField = UITextField()
+textField.layer.borderColor = UIColor.lightGray.cgColor
+textField.layer.borderWidth = 1
+textField.layer.cornerRadius = 5
+textField.textColor = UIColor.black
+textField.textAlignment = .left
+textField.font = UIFont.systemFont(ofSize: 14)
+textField.placeholder = "placeholder ..."
+textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+textField.leftViewMode = .always
+textField.delegate = self
+//textField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+//textField.rightViewMode = .always
+textField.clearButtonMode = .always
+textField.returnKeyType = .done
+view.addSubview(textField)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FF7730D-F0AC-41DA-B4F7-165AD501C65C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITextField: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

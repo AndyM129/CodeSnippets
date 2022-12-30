@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_flex_register_global_entry</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - @ANDY_DEBUG
+#if defined(DEBUG)
+#import &lt;FLEX/FLEX.h&gt;
+
+@interface &lt;#NSObject#&gt; (ANDY_DEBUG) @end
+@implementation &lt;#NSObject#&gt; (ANDY_DEBUG)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        [FLEXManager.sharedManager registerGlobalEntryWithName:@"&lt;#name#&gt;" viewControllerFutureBlock:^UIViewController * _Nonnull{
+            [[FLEXManager.sharedManager valueForKey:@"explorerViewController"] dismissViewControllerAnimated:YES completion:^{
+                &lt;#NSLog(@"ANDY_DEBUG: ");#&gt;
+            }];
+            return UIViewController.new;
+        }];
+    });
+}
+
+@end
+
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>039FCBC8-8337-40CC-86BE-201FB1968B95</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 注册 FLEXManager 自定义功能</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

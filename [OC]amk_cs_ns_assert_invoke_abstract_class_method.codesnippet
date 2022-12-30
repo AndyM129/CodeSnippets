@@ -15,9 +15,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>NSAssert(![self isMemberOfClass:&lt;#AbstractClassName#&gt;.class], @"&lt;#AbstractClassName#&gt; is an abstract class, you should not instantiate it directly.");</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSAssert: 禁止直接使用抽象类的方法</string>
+	<string>【OC】NSAssert: 禁止直接使用抽象类的方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

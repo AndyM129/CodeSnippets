@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_flex_manager_register_global_entry</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[FLEXManager.sharedManager registerGlobalEntryWithName:@"&lt;#标题#&gt;" viewControllerFutureBlock:^UIViewController * _Nonnull{
+    [[FLEXManager.sharedManager valueForKey:@"explorerViewController"] dismissViewControllerAnimated:YES completion:^{
+        &lt;#coding...#&gt;
+    }];
+    return UIViewController.new;
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DF2EE815-5E57-4A10-8205-8EBB3AE89099</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】FLEXManager: 注册自定义功能</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

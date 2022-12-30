@@ -12,16 +12,16 @@
 	<string>#ifdef DEBUG
 #define &lt;#Custom#&gt;Log(fmt, ...) NSLog((@"&lt;#CustomPrefix#&gt; " fmt), ##__VA_ARGS__)
 #else
-#define &lt;#Custom#&gt;LogLog(...)
+#define &lt;#Custom#&gt;Log(...)
 #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F2246C10-A0DB-4A59-91B8-B056234FC12A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>#define &lt;#Custom#&gt;Log(fmt, ...) NSLog((@"&lt;#CustomPrefix#&gt; " fmt), ##__VA_ARGS__)</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSLog: 带有自定义前置的Log</string>
+	<string>【OC】#define CustomLog(fmt, ...) ...</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

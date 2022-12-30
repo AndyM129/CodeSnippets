@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_table_view_cell</string>
+	<string>amk_cs_ui_table_view_cell_pragma_mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -17,12 +17,17 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
     return self;
 }
 
 #pragma mark - Getters &amp; Setters
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    // 不调用父类实现，以避免编辑模式下的默认处理
+}
 
 #pragma mark - Data &amp; Networking
 
@@ -39,17 +44,18 @@
     [super updateConstraints];
 }
 
-#pragma mark - Public Methods
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    // Clear subviews data ...
+}
 
-#pragma mark - Private Methods
+#pragma mark - Action Methods
 
 #pragma mark - Notifications
 
 #pragma mark - KVO
 
 #pragma mark - Protocol
-
-#pragma mark - Overrides
 
 #pragma mark - Helper Methods
 </string>
@@ -62,7 +68,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewCell: 代码框架</string>
+	<string>【OC】UITableViewCell: 代码框架</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

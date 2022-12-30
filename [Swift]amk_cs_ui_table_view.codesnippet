@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let tableView = UITableView(frame: view.bounds, style: .plain)
+tableView.delegate = self
+tableView.dataSource = self
+tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+tableView.backgroundColor = view.backgroundColor
+tableView.separatorColor = tableView.backgroundColor
+tableView.estimatedSectionHeaderHeight = 0
+tableView.estimatedSectionFooterHeight = 0
+if #available(iOS 15.0, *) {
+    tableView.sectionHeaderTopPadding = 0
+}
+tableView.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
+tableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: NSStringFromClass(UITableViewHeaderFooterView.self))
+view.addSubview(tableView)
+tableView.reloadData()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1A99C828-DB5A-426E-A93C-595B64F409F4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITableView: 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

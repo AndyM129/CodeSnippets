@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_menu_print</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func printMenu(_ menu: NSMenu?, indentationLevel: Int = 0) {
+    guard let menu = menu else { return }
+    
+    if indentationLevel==0 { print("\(menu.title)") }
+    
+    let menuItems = menu.items
+    for (index, menuItem) in menuItems.enumerated() {
+        var indentationString = "   "
+        let isLastMenuItem = index == menuItems.count-1
+        for _ in 0..&lt;indentationLevel { indentationString += "┃  " }
+        indentationString += (isLastMenuItem ? "┗━ " : "┣━ ")
+        if menuItem.isSeparatorItem { print("\(indentationString)————————————————"); continue }
+        
+        print("\(indentationString)\(menuItem.title) ==&gt; \(menuItem) =&gt; \(menuItem.action==nil ? "nil" : String(describing: menuItem.action!))")
+        printMenu(menuItem.submenu, indentationLevel:indentationLevel+1)
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4243A4E1-9BA8-4DF1-8815-0C3D4168B318</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSMenu: 打印树状菜单</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

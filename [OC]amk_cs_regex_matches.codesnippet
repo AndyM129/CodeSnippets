@@ -30,7 +30,7 @@ NSLog(@"\"%@...\"是否匹配到：%@", [string substringToIndex:MIN(50, string.
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSString: 正则匹配</string>
+	<string>【OC】NSString: 正则匹配</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

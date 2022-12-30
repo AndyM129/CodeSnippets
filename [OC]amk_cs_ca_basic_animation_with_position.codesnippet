@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_basic_animation_with_position</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 位移动画
+CABasicAnimation *positionAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
+positionAnimation.fromValue = [NSValue valueWithCGPoint:animationView.layer.position];
+positionAnimation.toValue = [NSValue valueWithCGPoint:CGPointZero];
+positionAnimation.duration = 1;
+positionAnimation.fillMode = kCAFillModeForwards;
+positionAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+positionAnimation.repeatCount = 1; //CGFLOAT_MAX;
+positionAnimation.removedOnCompletion = NO;
+[positionAnimation setAmk_animationDidStopBlock:^(CAAnimation * _Nullable animation, BOOL finished) {
+    [weakAnimationView removeFromSuperview];
+}];
+[animationView.layer addAnimation:positionAnimation forKey:@"positionAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CAC6E849-4C70-440F-BF2A-B52EEF027835</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CABasicAnimation *positionAnimation = [CABasicAnimation animationWithKeyPath:@"position"];    ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 位移动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

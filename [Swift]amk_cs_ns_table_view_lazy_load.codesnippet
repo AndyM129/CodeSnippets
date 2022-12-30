@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_table_view_lazy_load</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>enum TableColumnTitle {
+    static let icon = "Icon"
+    static let label = "Label"
+    static let textField = "TextField"
+}
+
+enum TableColumnIdentifier {
+    static let icon = NSUserInterfaceItemIdentifier("\(TableColumnIdentifier.self).icon")
+    static let label = NSUserInterfaceItemIdentifier("\(TableColumnIdentifier.self).label")
+    static let textField = NSUserInterfaceItemIdentifier("\(TableColumnIdentifier.self).textField")
+}
+
+lazy var tableView: NSTableView = {
+    let tableView = NSTableView()
+    tableView.dataSource = self
+    tableView.delegate = self
+    tableView.allowsMultipleSelection = true
+    tableView.usesAlternatingRowBackgroundColors = true // 是否开启斑马纹
+    tableView.columnAutoresizingStyle = .uniformColumnAutoresizingStyle
+    
+    // 添加列
+    tableView.addTableColumn({ // 图标列
+        let column = NSTableColumn(identifier: TableColumnIdentifier.icon)
+        column.title = TableColumnTitle.icon
+        column.headerToolTip = "ToolTip: \(TableColumnTitle.icon)"
+        column.isEditable = false
+        column.width = 30 //16
+        column.minWidth = column.width
+        column.maxWidth = column.width
+        return column
+    }())
+    tableView.addTableColumn({ // 文字列
+        let column = NSTableColumn(identifier: TableColumnIdentifier.label)
+        column.title = TableColumnTitle.label
+        column.headerToolTip = "ToolTip: \(column.title)"
+        column.isEditable = true
+        column.sortDescriptorPrototype = NSSortDescriptor(key: TableColumnTitle.label, ascending: true)
+        return column
+    }())
+    tableView.addTableColumn({ // 输入框列
+        let column = NSTableColumn(identifier: TableColumnIdentifier.textField)
+        column.title = TableColumnTitle.textField
+        column.headerToolTip = "ToolTip: \(column.title)"
+        column.isEditable = true
+        column.sortDescriptorPrototype = NSSortDescriptor(key: TableColumnTitle.textField, ascending: true)
+        return column
+    }())
+    
+    // 添加双击事件
+    tableView.target = self
+    tableView.doubleAction = #selector(tableViewDoubleClickd)
+    
+    // 添加滚动容器
+    let scrollView = NSScrollView()
+    scrollView.hasVerticalScroller = true
+    scrollView.hasHorizontalScroller = true
+    scrollView.contentView.documentView = tableView
+    view.addSubview(tableView.enclosingScrollView!)
+    return tableView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AB662893-BD52-4C52-BF29-ADC4CE8647A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSTableView: 懒加载 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_un_user_notification_center_add_local_notification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let identifier = "\(Bundle.main.bundleIdentifier!).notification.\(Int(Date.now.timeIntervalSince1970))" // 要与发过通知的 identifier 不一样
+
+let content = UNMutableNotificationContent()
+content.title = "Title: 本地通知 示例"
+content.subtitle = "Subtitle: 定时发送 + 按钮 + 附件"
+content.body = "Body: 发送于 \(identifier.components(separatedBy: ".").last!)"
+content.sound = UNNotificationSound.default
+content.categoryIdentifier = "\(identifier).category"
+content.attachments = {
+    guard let attachment = try? UNNotificationAttachment(identifier: "Attachment0", url: Bundle.main.urlForImageResource("logo")!, options: nil) else { return [] }
+    return [attachment]
+}()
+
+var actions: [UNNotificationAction] = []
+actions.append(UNNotificationAction(identifier: "Action0", title: "按钮0", options: .init(rawValue: 0)))
+actions.append(UNNotificationAction(identifier: "Action1", title: "按钮1", options: .init(rawValue: 1)))
+
+let notificationCenter = UNUserNotificationCenter.current()
+notificationCenter.delegate = self
+notificationCenter.setNotificationCategories([UNNotificationCategory(identifier: content.categoryIdentifier, actions: actions, intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "", options: .customDismissAction)])
+notificationCenter.add(UNNotificationRequest(identifier: identifier, content: content, trigger: nil)) { error in
+    if error != nil {
+        log.error("Time Interval Notification scheduled failed", context: ["content":content])
+    } else {
+        log.info("Time Interval Notification scheduled", context: ["content":content])
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B3974274-6495-4E62-A73A-E6C9547169C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UNUserNotificationCenter: 发送本地通知（声音+按钮+附件）</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

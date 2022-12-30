@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_keyframe_animation_with_transform_rotation_by_shake</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 旋转动画：抖动
+CAKeyframeAnimation *shakeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];
+shakeAnimation.values = @[@(0/360.0*M_PI), @(-20/180.0*M_PI), @(20/180.0*M_PI), @(-20/180.0*M_PI), @(20/180.0*M_PI), @(0/360.0*M_PI)];
+shakeAnimation.keyTimes = @[@(0), @(0.1), @(0.2), @(0.3), @(0.4), @(0.5), @(1)];
+shakeAnimation.fillMode = kCAFillModeForwards;
+shakeAnimation.duration = 1.0;
+shakeAnimation.fillMode = kCAFillModeForwards;
+shakeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+shakeAnimation.repeatCount = CGFLOAT_MAX;
+shakeAnimation.removedOnCompletion = YES;
+[shakeAnimation setAmk_animationDidStopBlock:^(CAAnimation * _Nullable animation, BOOL finished) {
+    [weakAnimationView removeFromSuperview];
+}];
+[animationView.layer addAnimation:shakeAnimation forKey:@"shakeAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>86B8C029-BBF7-45EC-9D76-D67D9CB323C5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CAKeyframeAnimation *shakeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation"];    ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 旋转动画 - 抖动</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_debug_log_implementation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)logWithFunction:(const char *)function line:(NSInteger)line string:(NSString *)format, ... {
+#   if defined(DEBUG)
+    if (!self.debugEnable) return;
+    
+    static NSDateFormatter *dateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        dateFormatter = [NSDateFormatter.alloc init];
+        [dateFormatter setDateStyle:NSDateFormatterFullStyle];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss.SSS"];
+    });
+    
+    va_list arguments;
+    va_start(arguments, format);
+    NSString *string = [NSString.alloc initWithFormat:format arguments:arguments];
+    va_end(arguments);
+    
+    fprintf(stderr,"%s %s Line %ld: %s%s\n", [dateFormatter stringFromDate:NSDate.date].UTF8String, function, line, "&lt;#自定义前缀#&gt;", string.UTF8String);
+#   endif
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B226C9B0-3BD2-4B90-9CEA-C1FDB4047AC3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)logWithFunction:(const char *)function line:(NSInteger)line string:(NSString *)format, ... { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: 自定义Log 方法实现</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

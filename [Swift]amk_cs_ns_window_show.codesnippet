@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_window_show</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 新建窗口 并显示
+func showWindow(title: String?, contentViewController: NSViewController) -&gt; NSWindowController{
+    let contentRect: NSRect = NSRect(x: 0, y: 0, width: 600, height: 400)
+    let styleMask: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .resizable]
+    let windowController = NSWindowController()
+    windowController.window = NSWindow(contentRect: contentRect, styleMask: styleMask, backing: .buffered, defer: false)
+    windowController.window?.windowController = windowController
+    windowController.window?.title = title ?? (NSApp.mainWindow ?? NSApp.windows.first!).title
+    windowController.window?.contentViewController = contentViewController
+    windowController.showWindow(self)
+    windowController.window?.center()
+    return windowController
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D26EEE7D-69C0-4219-B0E4-9561EC818AC3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】NSWindow: 新建窗口 并显示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

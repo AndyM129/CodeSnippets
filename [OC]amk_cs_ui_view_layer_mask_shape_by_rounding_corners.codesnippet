@@ -17,10 +17,12 @@ self.layer.mask = layerMask;</string>
 	<string>4D52519F-9227-4461-AD5B-DD3032AED0AC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>CAShapeLayer: 指定角的圆角遮罩</string>
+	<string>【OC】CAShapeLayer: 指定角的圆角遮罩</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
