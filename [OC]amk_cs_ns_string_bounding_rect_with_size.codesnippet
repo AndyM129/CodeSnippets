@@ -3,23 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_typedef_string_enum</string>
+	<string>amk_cs_ns_string_bounding_rect_with_size</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
-//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
-//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<string>CGSize maxSise = CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX);
+NSStringDrawingOptions options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
+NSDictionary *attributes = @{NSFontAttributeName: &lt;#label.font#&gt;};
+CGRect boundingRect = [&lt;#text#&gt; boundingRectWithSize:maxSise options:options attributes:attributes context:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<string>121ACFB2-4D6D-427B-887A-1CEED8484420</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】typedef: 定义字符串枚举名</string>
+	<string>【OC】NSString: 计算文本显示大小</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

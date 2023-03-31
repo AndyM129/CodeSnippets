@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_typedef_string_enum</string>
+	<string>amk_cs_ui_view_transform_make_scale</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
-//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
-//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<string>&lt;#view#&gt;.transform = CGAffineTransformMakeScale(1.0f, 2.0f);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<string>08958C70-D436-4A3A-8436-6B8591B7F466</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<string>&lt;#view#&gt;.transform = CGAffineTransformMakeScale(1.0f, 2.0f);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】typedef: 定义字符串枚举名</string>
+	<string>【OC】UIView: 拉伸/缩放 变换</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

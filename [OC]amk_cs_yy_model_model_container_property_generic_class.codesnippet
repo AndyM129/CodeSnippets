@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_typedef_string_enum</string>
+	<string>amk_cs_yy_model_model_container_property_generic_class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
-//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
-//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<string>+ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"&lt;#属性名#&gt;" : &lt;#属性对应的类#&gt;.class};
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<string>43D1EB4A-8EFC-4552-8CDD-8641823D27B4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<string>+ (NSDictionary *)modelContainerPropertyGenericClass { ... }</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】typedef: 定义字符串枚举名</string>
+	<string>【OC】YYModel: 指定集合中 元素的类型</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

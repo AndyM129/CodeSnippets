@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_typedef_string_enum</string>
+	<string>amk_cs_bde_log_action_if_needed</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
-//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
-//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<string>- (void)log&lt;#actionName#&gt;IfNeeded:(BOOL)log {
+    NSString *actionId = &lt;#actionId#&gt;;
+    if (!log) {
+        self.bde_auxiliaryLogParams[actionId] = nil;
+    } else if ([self.bde_auxiliaryLogParams bde_boolForKey:actionId] == NO) {
+        self.bde_auxiliaryLogParams[actionId] = @YES;
+        [BDELogManager logActionWithId:actionId paramsBlock:&lt;#^(NSMutableDictionary * _Nullable params)paramsBlock#&gt;];
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<string>32B76C73-02E0-4573-B2C5-AC71A6F09E4A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】typedef: 定义字符串枚举名</string>
+	<string>【OC】BDELogManager: 按需打点</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

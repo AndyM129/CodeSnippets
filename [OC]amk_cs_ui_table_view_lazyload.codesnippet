@@ -15,7 +15,10 @@
         if (@available(iOS 13.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         } else {
+#           pragma clang diagnostic push
+#           pragma clang diagnostic ignored "-Wdeprecated-declarations"
             self.automaticallyAdjustsScrollViewInsets = NO;
+#           pragma clang diagnostic pop
         }
         _tableView.estimatedRowHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;

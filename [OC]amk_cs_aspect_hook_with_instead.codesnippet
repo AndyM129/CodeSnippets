@@ -10,10 +10,8 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[&lt;#Class#&gt; aspect_hookSelector:@selector(&lt;#selector#&gt;) withOptions:AspectPositionInstead usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
-    id res;
-    NSInvocation *invocation = info.originalInvocation;
-    [invocation invoke];
-    [invocation getReturnValue:&amp;res];    
+    id returnValue = nil;
+    [aspectInfo.originalInvocation setReturnValue:&amp;returnValue];
 } error:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9555B75D-50C8-44A3-B220-12AA326F3D51</string>

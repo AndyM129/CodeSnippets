@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_dispatch_group</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 构建完成回调
+dispatch_block_t completionBlock = ^{
+    NSLog(@"完成");
+};
+
+// 创建线程组
+dispatch_group_t group = dispatch_group_create();
+
+// 处理xxx
+dispatch_group_enter(group);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ // 模拟异步网络请求
+    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSURLSessionDataTask *dataTask = [NSURLSession.sharedSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"%@", [NSString.alloc initWithData:data encoding:NSUTF8StringEncoding]);
+        dispatch_group_leave(group);
+    }];
+    [dataTask resume];
+});
+    
+// 提交线程组
+dispatch_group_notify(group, dispatch_get_main_queue(), completionBlock);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>96C5596B-DCEC-4475-AFF9-8493B96B4E8A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】dispatch_group: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

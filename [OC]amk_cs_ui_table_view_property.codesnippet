@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong, nullable) UITableView *tableView;
+	<string>@property (nonatomic, strong, readwrite, nullable) UITableView *tableView;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C06F4289-70B7-401A-BBBD-18A0AEC48F7E</string>

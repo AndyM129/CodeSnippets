@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_string_category_url_query_key_values</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@interface NSString (AMKURLQueryKeyValues)
+
+- (NSMutableDictionary&lt;NSString *, NSString *&gt; *)urlQueryKeyValues;
+
+@end
+
+@implementation NSString (AMKURLQueryKeyValues)
+
+- (NSMutableDictionary&lt;NSString *, NSString *&gt; *)urlQueryKeyValues {
+    __block NSMutableDictionary&lt;NSString *, NSString *&gt; *urlQueryKeyValues = nil;
+    
+    if (self.length) {
+        NSRange questionMarkRange = [self rangeOfString:@"?"];
+        NSString *query = questionMarkRange.location == NSNotFound ? self : [self substringFromIndex:questionMarkRange.location + questionMarkRange.length];
+        
+        if (query.length) {
+            NSArray&lt;NSString *&gt; *urlQueryKeyValueStrings = [query componentsSeparatedByString:@"&amp;"];
+            urlQueryKeyValues = [NSMutableDictionary dictionaryWithCapacity:urlQueryKeyValueStrings.count];
+            
+            [urlQueryKeyValueStrings enumerateObjectsUsingBlock:^(NSString * _Nonnull urlQueryKeyValueString, NSUInteger idx, BOOL * _Nonnull stop) {
+                if (urlQueryKeyValueString.length) {
+                    NSRange equalSignRange = [urlQueryKeyValueString rangeOfString:@"="];
+                    NSString *key, *value;
+                    if (equalSignRange.location == NSNotFound) {
+                        key = [urlQueryKeyValueString stringByRemovingPercentEncoding];
+                    } else {
+                        key = [[urlQueryKeyValueString substringToIndex:equalSignRange.location] stringByRemovingPercentEncoding];
+                        value = [[urlQueryKeyValueString substringFromIndex:equalSignRange.location + equalSignRange.length] stringByRemovingPercentEncoding];
+                    }
+                    
+                    urlQueryKeyValues[key] = value ?: @"";
+                }
+            }];
+        }
+    }
+    
+    return urlQueryKeyValues;
+}
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A456DB6F-06D0-4FFA-B050-839503F029DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSString: 扩展方法 - (NSMutableDictionary&lt;NSString *, NSString *&gt; *)urlQueryKeyValues;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

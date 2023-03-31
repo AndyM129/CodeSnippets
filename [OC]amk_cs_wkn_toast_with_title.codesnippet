@@ -9,7 +9,8 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[WKHUDHelper.HUDToastView postToastViewWithTitle:&lt;#@"当前无网络，请联网后尝试"#&gt; delay:3.0];</string>
+	<string>[WKHUDHelper.HUNHelper removeAllHUDViewFromWindow];
+[WKHUDHelper.HUDToastView postToastViewWithTitle:&lt;#@"当前无网络，请联网后尝试"#&gt; delay:3.0];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4EA0EC8F-33D4-42AC-9DE2-7A58128CD36D</string>
 	<key>IDECodeSnippetLanguage</key>

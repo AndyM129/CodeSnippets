@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_typedef_string_enum</string>
+	<string>amk_cs_ca_layer_transform_3d_make_rotation</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NSString *&lt;#CustomEnumName#&gt; NS_EXTENSIBLE_STRING_ENUM;
-//FOUNDATION_EXPORT &lt;#CustomEnumName#&gt; const CustomEnum_1;
-//&lt;#CustomEnumName#&gt; const CustomEnum_1 = @"CustomEnum_1";</string>
+	<string>&lt;#layer#&gt;.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0); // 上下颠倒</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8373E4CD-7CED-412A-9DD3-28B629716D3A</string>
+	<string>57DFC8C8-D6EB-4F03-AD82-6DD6DC6A4A55</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>typedef NSString *CustomEnumName NS_EXTENSIBLE_STRING_ENUM;</string>
+	<string>&lt;#layer#&gt;.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】typedef: 定义字符串枚举名</string>
+	<string>【OC】CALayer: 旋转变换 - 上下颠倒</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
