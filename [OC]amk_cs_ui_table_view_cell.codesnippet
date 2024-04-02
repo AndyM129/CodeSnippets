@@ -6,7 +6,7 @@
 	<string>amk_cs_ui_table_view_cell_pragma_mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Init Methods
@@ -17,8 +17,10 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
-        
+        //self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.selectedBackgroundView = [UIView.alloc initWithFrame:self.bounds];
+        self.selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        self.selectedBackgroundView.backgroundColor = [UIColor colorWithWhite:0 alpha:.05];
     }
     return self;
 }

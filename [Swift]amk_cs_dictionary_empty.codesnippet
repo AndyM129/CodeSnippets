@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var &lt;#dict#&gt;:[&lt;#Int#&gt;:&lt;#String#&gt;] = [:]</string>
+	<string>var &lt;#dict#&gt;: [&lt;#Int#&gt;:&lt;#String#&gt;] = [:]</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8FB669AB-D818-4C1C-B143-FF98AC6B89D4</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>声明并创建一个空字典</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】var dict:[Int:String] = [:]</string>
+	<string>【Swift】var dict: [Int:String] = [:]</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

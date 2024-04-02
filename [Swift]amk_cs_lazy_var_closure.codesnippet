@@ -17,10 +17,12 @@
 	<string>D84D1A82-114A-4512-BB5D-CB19A1F636E9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】lazy var name:type = { ... }</string>
+	<string>【Swift】lazy var name:type = { ... }()</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

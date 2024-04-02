@@ -6,7 +6,7 @@
 	<string>amk_cs_for_in_dict</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>for (key, value) in dict {

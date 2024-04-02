@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#view#&gt;.transform = CGAffineTransformMakeRotation(&lt;#M_PI_2#&gt;);</string>
+	<string>&lt;#view#&gt;.transform = CGAffineTransformRotate(CGAffineTransformIdentity, &lt;#180.0 /*旋转角度，正值为顺时针旋转，负值为逆时针*/#&gt; / 180.0 * M_PI);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>803742DD-4435-4884-BCCC-BEDAA0E063F6</string>
 	<key>IDECodeSnippetLanguage</key>

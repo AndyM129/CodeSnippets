@@ -25,14 +25,13 @@ required init?(coder: NSCoder) {
     super.init(coder: coder)
 }
 
-// MARK: - Life Circle
+// MARK: - Life Cycle
 
 override func viewDidLoad() {
     super.viewDidLoad()
     title = "Title"
-    automaticallyAdjustsScrollViewInsets = false;
     view.backgroundColor = view.backgroundColor ?? UIColor.white
-
+    
 }
 
 override func viewWillAppear(_ animated: Bool) {
@@ -69,6 +68,11 @@ override func viewWillLayoutSubviews() {
 override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
+}
+
+override func updateViewConstraints() {
+    // code...
+    super.updateViewConstraints()
 }
 
 // MARK: - Action Methods

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_consuming_time</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CFTimeInterval startTime = CACurrentMediaTime();
+&lt;#code here#&gt;
+CFTimeInterval endTime = CACurrentMediaTime();
+CFTimeInterval consumingTime = endTime - startTime;
+NSLog(@"耗时：%@", @(consumingTime));</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>099C8A48-03D3-490A-8327-A4A3BEC721F4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】耗时统计：CFTimeInterval consumingTime = endTime - startTime;</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

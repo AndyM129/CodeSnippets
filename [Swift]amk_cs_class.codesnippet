@@ -9,7 +9,7 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class name {
+	<string>class &lt;#ClassName#&gt; {
     &lt;#code#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

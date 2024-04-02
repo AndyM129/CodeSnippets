@@ -6,7 +6,7 @@
 	<string>amk_cs_strong_self</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>__strong __typeof__(weakSelf)strongSelf = weakSelf;</string>

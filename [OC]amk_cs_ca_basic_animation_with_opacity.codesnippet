@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_basic_animation_with_opacity</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 透明度动画
+CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+opacityAnimation.fromValue = [NSNumber numberWithFloat:0];
+opacityAnimation.toValue = [NSNumber numberWithFloat:1];
+opacityAnimation.duration = 0.2;
+opacityAnimation.removedOnCompletion = NO;
+opacityAnimation.fillMode = kCAFillModeForwards;
+opacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+[animationView.layer addAnimation:opacityAnimation forKey:@"opacityAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2E33CC73-1DB6-4648-8777-92ED7933A615</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"]; ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 透明度动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

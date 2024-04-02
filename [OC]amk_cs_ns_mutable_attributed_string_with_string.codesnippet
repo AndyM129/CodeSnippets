@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_mutable_attributed_string_with_string</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSString *string = @"文本......";
+NSMutableAttributedString *attributedText = [NSMutableAttributedString.alloc initWithString:string ?: @""];
+attributedText.yy_color = HEXRGBCOLOR(0x000000);
+attributedText.yy_font = [UIFont systemFontOfSize:14];
+attributedText.yy_alignment = NSTextAlignmentCenter;
+attributedText.yy_paragraphSpacing = 5;
+//label.attributedText = attributedText;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70ADCB36-8934-4CF3-B445-4CFD2A6344A4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>NSMutableAttributedString *attributedText = [NSMutableAttributedString.alloc initWithString:string ?: @""]; ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSAttributedString： 构建可变属性字符串</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>enum Number: Int {
+	<string>enum Number: Int, CaseIterable {
     case zero = 0, one, two, three
     
     var toString: String {

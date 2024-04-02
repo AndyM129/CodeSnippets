@@ -9,104 +9,110 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - Deinit
+	<string>import UIKit
 
-deinit {
+@objc public class &lt;#AMKCustomTableViewCell#&gt;: UITableViewCell {
+
+    // MARK: - Deinit
     
-}
-
-// MARK: - Init Methods
-
-override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    backgroundColor = UIColor.white
-    selectedBackgroundView = UIView(frame: bounds)
-    selectedBackgroundView?.backgroundColor = UIColor(white: 0, alpha: 0.1)
-}
-
-required init?(coder: NSCoder) {
-    super.init(coder: coder)
-}
-
-// MARK: - Getters &amp; Setters
-
-lazy var iconImageView: UIImageView = {
-    let iconImageView = UIImageView.init()
-    iconImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 30, height: 30))
-    iconImageView.contentMode = .scaleAspectFit
-    contentView.addSubview(iconImageView)
-    return iconImageView
-}()
-
-lazy var titleLabel: UILabel = {
-    let titleLabel = UILabel()
-    titleLabel.text = "一二三四五六七八九十0123456789"
-    titleLabel.textColor = UIColor.black
-    titleLabel.textAlignment = .left
-    titleLabel.numberOfLines = 1;
-    titleLabel.font = UIFont.systemFont(ofSize: 17)
-    contentView.addSubview(titleLabel)
-    return titleLabel
-}()
-
-lazy var arrowImageView: UIImageView = {
-    let arrowImageView = UIImageView.init()
-    arrowImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 17, height: 17))
-    arrowImageView.contentMode = .scaleAspectFit
-    contentView.addSubview(arrowImageView)
-    return arrowImageView
-}()
-
-// MARK: - Data &amp; Networking
-
-// MARK: - Layout Subviews
-
-/// 行高
-static func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath, withData: Any?) -&gt; CGFloat {
-    return 60
-}
-
-override class var requiresConstraintBasedLayout: Bool {
-    return true
-}
-
-override func updateConstraints() {
-    iconImageView.snp.makeConstraints { make in
-        make.width.equalTo(30)
-        make.height.equalTo(30)
-        make.left.equalTo(contentView).offset(15)
-        make.centerY.equalTo(contentView)
-    }
-    titleLabel.snp.makeConstraints { make in
-        make.left.equalTo(iconImageView.snp.right).offset(10)
-        make.right.equalTo(arrowImageView).offset(-10)
-        make.centerY.equalTo(contentView)
-    }
-    arrowImageView.snp.makeConstraints { make in
-        make.width.equalTo(17)
-        make.height.equalTo(17)
-        make.right.equalTo(contentView).offset(-15)
-        make.centerY.equalTo(contentView)
+    deinit {
+        
     }
     
-    //according to apple super should be called at end of method
-    super.updateConstraints()
-}
-
-override func prepareForReuse() {
-    super.prepareForReuse()
+    // MARK: - Init Methods
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.backgroundColor = UIColor.white
+        self.selectedBackgroundView = UIView(frame: bounds)
+        self.selectedBackgroundView?.backgroundColor = UIColor(white: 0, alpha: 0.1)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    // MARK: - Getters &amp; Setters
+    
+    lazy var iconImageView: UIImageView = {
+        let iconImageView = UIImageView.init()
+        iconImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 30, height: 30))
+        iconImageView.contentMode = .scaleAspectFit
+        self.contentView.addSubview(iconImageView)
+        return iconImageView
+    }()
+    
+    lazy var titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = "一二三四五六七八九十0123456789"
+        titleLabel.textColor = UIColor.black
+        titleLabel.textAlignment = .left
+        titleLabel.numberOfLines = 1;
+        titleLabel.font = UIFont.systemFont(ofSize: 17)
+        self.contentView.addSubview(titleLabel)
+        return titleLabel
+    }()
+    
+    lazy var arrowImageView: UIImageView = {
+        let arrowImageView = UIImageView.init()
+        arrowImageView.image = UIImage(color: UIColor.lightGray, size: CGSize(width: 17, height: 17))
+        arrowImageView.contentMode = .scaleAspectFit
+        self.contentView.addSubview(arrowImageView)
+        return arrowImageView
+    }()
+    
+    // MARK: - Data &amp; Networking
+    
+    // MARK: - Layout Subviews
+    
+    /// 行高
+    static func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath, withData: Any?) -&gt; CGFloat {
+        return 60
+    }
+    
+    public override class var requiresConstraintBasedLayout: Bool {
+        return true
+    }
+    
+    public override func updateConstraints() {
+        self.iconImageView.snp.makeConstraints { make in
+            make.width.equalTo(30)
+            make.height.equalTo(30)
+            make.left.equalTo(self.contentView).offset(15)
+            make.centerY.equalTo(self.contentView)
+        }
+        self.titleLabel.snp.makeConstraints { make in
+            make.left.equalTo(self.iconImageView.snp.right).offset(10)
+            make.right.equalTo(self.arrowImageView).offset(-10)
+            make.centerY.equalTo(self.contentView)
+        }
+        self.arrowImageView.snp.makeConstraints { make in
+            make.width.equalTo(17)
+            make.height.equalTo(17)
+            make.right.equalTo(self.contentView).offset(-15)
+            make.centerY.equalTo(self.contentView)
+        }
+        
+        //according to apple super should be called at end of method
+        super.updateConstraints()
+    }
+    
+    public override func prepareForReuse() {
+        super.prepareForReuse()
+        
+    }
+    
+    // MARK: - Action Methods
+    
+    // MARK: - Notifications
+    
+    // MARK: - KVO
+    
+    // MARK: - Protocols
+    
+    // MARK: - Helper Methods
     
 }
-
-// MARK: - Action Methods
-
-// MARK: - Notifications
-
-// MARK: - KVO
-
-// MARK: - Protocols
-
-// MARK: - Helper Methods
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1DC90497-4166-4969-A839-41CF9A333E55</string>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ca_keyframe_animation_with_transform_rotation_by_shake</string>
+	<string>amk_cs_ca_keyframe_animation_with_transform_rotation_for_shake</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>

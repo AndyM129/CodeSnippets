@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_class_hook_selector_with_instead</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[objc_getMetaClass(NSStringFromClass(UIViewController.class).UTF8String) aspect_hookSelector:@selector(bde_topViewController) withOptions:AspectPositionInstead usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
+    // id returnValue = UIWindow.bba_topViewController;
+    // [aspectInfo.originalInvocation setReturnValue:&amp;returnValue];
+} error:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>10C44D5E-8EB9-4420-9B4E-C9F3EF3EDAD6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Aspect: class hook selector with instead</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var &lt;#array#&gt;:[&lt;#Int#&gt;]</string>
+	<string>var &lt;#array#&gt;: [&lt;#Int#&gt;]</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>55218733-EB4B-4056-B849-9EA80FA59CE6</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>声明一个数组</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】var array:[Int]</string>
+	<string>【Swift】var array: [Int]</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

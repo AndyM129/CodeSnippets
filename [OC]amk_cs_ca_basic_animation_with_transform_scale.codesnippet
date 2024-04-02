@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_basic_animation_with_transform_scale</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+scaleAnimation.fromValue = [NSNumber numberWithFloat:0.5];
+scaleAnimation.toValue = [NSNumber numberWithFloat:1.0];
+scaleAnimation.duration = 0.2;
+scaleAnimation.removedOnCompletion = NO;
+scaleAnimation.fillMode = kCAFillModeForwards;
+scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+[animationView.layer addAnimation:scaleAnimation forKey:@"scaleAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E710FFF2-577C-4670-9CDF-4684E9AE41DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"]; ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 缩放动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

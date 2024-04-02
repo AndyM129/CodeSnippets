@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>enum &lt;#CustomError#&gt;:Error {
+	<string>enum &lt;#CustomError#&gt;:Error, CaseIterable {
     case &lt;#aError#&gt;
     case &lt;#bError#&gt;
 }</string>

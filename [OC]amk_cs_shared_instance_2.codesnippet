@@ -13,9 +13,13 @@
     static id _sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&amp;onceToken, ^{
-        _sharedInstance = [self.alloc init];
+        _sharedInstance = [[super allocWithZone:NULL] init];
     });
     return _sharedInstance;
+}
+
++ (id)allocWithZone:(struct _NSZone *)zone {
+    return [self sharedInstance];
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>892E9BC5-DADC-4365-954E-929BF9DC4A8B</string>

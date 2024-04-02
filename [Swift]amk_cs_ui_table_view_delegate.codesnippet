@@ -11,31 +11,31 @@
 	<key>IDECodeSnippetContents</key>
 	<string>// MARK: UITableViewDelegate
     
-func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
     return 40
 }
 
-func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
+public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
     return 20
 }
 
-func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
     return 60
 }
 
-func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
     let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(UITableViewHeaderFooterView.self))
     headerView?.contentView.backgroundColor = UIColor.lightGray
     return headerView
 }
 
-func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
+public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -&gt; UIView? {
     let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: NSStringFromClass(UITableViewHeaderFooterView.self))
     footerView?.contentView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
     return footerView
 }
 
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     print("tableViewDidSelectRow: \(tableView), \(indexPath)")
 }</string>

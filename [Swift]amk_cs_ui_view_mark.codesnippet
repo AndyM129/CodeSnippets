@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+@objc public class &lt;#CustomView#&gt;: UIView {
+    
+    // MARK: - Deinit Methods
+    
+    deinit {
+        
+    }
+    
+    // MARK: - Init Methods
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = UIColor.orange
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Getters &amp; Setters
+    
+    // MARK: - Data &amp; Networking
+    
+    // MARK: - Layout Subviews
+    
+    public override class var requiresConstraintBasedLayout: Bool {
+        return true
+    }
+    
+    public override func updateConstraints() {
+        // Coding ...
+        
+        //according to apple super should be called at end of method
+        super.updateConstraints()
+    }
+        
+    // MARK: - Action Methods
+    
+    // MARK: - Notifications
+    
+    // MARK: - KVO
+    
+    // MARK: - Protocol
+    
+    // MARK: - Helper Methods
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F630D7D3-CBCD-483C-B0DF-6E9717934B1B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIView：代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_data_hex_encoded_string</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+
+private let HexDigits: [String] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
+
+public extension Data {
+    var hexEncodedString: String {
+        var result = String()
+        result.reserveCapacity(count * 2)
+        withUnsafeBytes { (p: UnsafeRawBufferPointer) in
+            for i in 0..&lt;count {
+                result.append(HexDigits[Int((p[i] &amp; 0xf0) &gt;&gt; 4)])
+                result.append(HexDigits[Int(p[i] &amp; 0x0f)])
+            }
+        }
+        return String(result)
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DEA906A2-146B-4F6F-8D03-CBEE5DB9FF9F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】Data: var hexEncodedString: String { ... }</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

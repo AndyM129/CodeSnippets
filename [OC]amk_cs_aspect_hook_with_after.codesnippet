@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_aspect_hook_with_after</string>
+	<string>amk_cs_aspect_instance_hook_selector_with_after</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -12,14 +12,7 @@
 	<string>NSError *error;
 static id&lt;AspectToken&gt; aspectToken;
 aspectToken = [&lt;#Class#&gt; aspect_hookSelector:@selector(&lt;#selector#&gt;) withOptions:AspectPositionAfter usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
-    if ([aspectInfo.instance conformsToProtocol:@protocol(UIApplicationDelegate)]) {
-        &lt;#coding...#&gt;
-        
-        if (&lt;#condition#&gt;) {
-            [aspectToken remove];
-            aspectToken = nil;
-        }
-    }
+    &lt;#coding...#&gt;
 } error:&amp;error];
 if (error) NSLog(@"❌ %@", error);</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -29,7 +22,7 @@ if (error) NSLog(@"❌ %@", error);</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】Aspect: hook with after</string>
+	<string>【OC】Aspect: instance hook  selector with after</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

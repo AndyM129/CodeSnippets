@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_controller_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Deinit
+
+deinit {
+    
+}
+
+// MARK: - Init Methods
+
+@objc public init() {
+    super.init(nibName: nil, bundle: nil)
+}
+
+required init?(coder: NSCoder) {
+    super.init(coder: coder)
+}
+
+// MARK: - Life Cycle
+
+public override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "Title"
+    view.backgroundColor = view.backgroundColor ?? UIColor.white
+    
+}
+
+public override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+}
+
+public override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+}
+
+public override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    
+}
+
+public override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    
+}
+
+// MARK: - Getters &amp; Setters
+
+// MARK: - Data &amp; Networking
+
+// MARK: - Layout Subviews
+
+public override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    
+}
+
+public override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+}
+
+public override func updateViewConstraints() {
+    // code...
+    super.updateViewConstraints()
+}
+
+// MARK: - Action Methods
+
+// MARK: - Notifications
+
+// MARK: - KVO
+
+// MARK: - Protocols
+
+// MARK: - Helper Methods
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>848063A9-3C57-4F43-8FD8-351B3E26AFEB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UIVIewController: 代码框架 @objc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_keyframe_animation_with_transform_translation_y_for_jumping</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 上下跳动动画
+CGFloat height = 7.f;
+CGFloat currentY = guideView.transform.ty;
+CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
+animation.duration = 1.f;
+animation.values = @[@(currentY), @(currentY - height / 4), @(currentY - height / 4 * 2), @(currentY - height / 4 * 3), @(currentY - height), @(currentY - height/ 4 * 3), @(currentY - height / 4 * 2), @(currentY - height / 4), @(currentY)];
+animation.keyTimes = @[@(0), @(0.025), @(0.085), @(0.2), @(0.5), @(0.8), @(0.915), @(0.975), @(1)];
+animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+animation.repeatCount = 3;
+[animationView.layer addAnimation:animation forKey:@"jumpingAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DB67F094-DFB3-489E-80DA-AC7E39B21A6C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 上下跳动动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

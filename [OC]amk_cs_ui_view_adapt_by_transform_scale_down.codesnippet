@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_adapt_by_transform_scale_down</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (UIScreen.mainScreen.bounds.size.width &lt; 414) {
+    CGFloat scale = UIScreen.mainScreen.bounds.size.width / 414.0;
+    &lt;#self#&gt;.transform = CGAffineTransformMakeScale(scale, scale);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E458E024-F897-4610-80E3-5C9B7B1C1AC5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【UIVIew】针对小屏手机，通过缩放 完成 UI 适配</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

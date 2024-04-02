@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_runtime_associated_object_assign</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static char kAssociatedObjectKey_&lt;#property name#&gt;;
+
+- (void)set&lt;#property name#&gt; {
+    objc_setAssociatedObject(self, &amp;kAssociatedObjectKey_&lt;#property name#&gt;, @(&lt;#argument name#&gt;), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (&lt;#type#&gt;)&lt;#property getter#&gt; {
+    return [((NSNumber *)objc_getAssociatedObject(self, &amp;kAssociatedObjectKey_&lt;#property name#&gt;)) &lt;#NSNumber value type for property#&gt;];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FBBF3DE1-2CAB-4AD7-9B37-EF69AA2DFFE9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Runtime: 关联属性 getter、setter 代码模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

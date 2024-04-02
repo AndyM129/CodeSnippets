@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_file_manager_contents_of_directory_at_path</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+
+public extension FileManager {
+    
+    func contentsOfDirectoryAtPath(_ path: String, withFilenamePrefix prefix: String) throws -&gt; [String] {
+        return try FileManager.default.contentsOfDirectory(atPath: path)
+            .filter { $0.hasPrefix("\(prefix).") }
+            .sorted { $0 &lt; $1 }
+    }
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D21AB02-4CF0-44A5-BA78-2D58BBDC9CE1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】FileManager: func contentsOfDirectoryAtPath(_ path: String, withFilenamePrefix prefix: String) throws -&gt; [String] { ... }</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

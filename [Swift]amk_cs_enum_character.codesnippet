@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>enum Suit: Character {
+	<string>enum Suit: Character, CaseIterable {
     case spades = "♠", hearts = "♡", diamonds = "♢", clubs = "♣"
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

@@ -11,25 +11,25 @@
 	<key>IDECodeSnippetContents</key>
 	<string>// MARK: UITableViewDataSource
     
-func numberOfSections(in tableView: UITableView) -&gt; Int {
+public func numberOfSections(in tableView: UITableView) -&gt; Int {
     return 5
 }
 
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
     return 10
 }
 
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(UITableViewCell.self), for: indexPath)
     cell.contentView.backgroundColor = UIColor(red: CGFloat(arc4random()%255)/255.0, green: CGFloat(arc4random()%255)/255.0, blue: CGFloat(arc4random()%255)/255.0, alpha: 0.2)
     return cell
 }
 
-func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -&gt; String? {
+public public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -&gt; String? {
     return String(format: "Section %ld Begin", section)
 }
 
-func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -&gt; String? {
+public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -&gt; String? {
     return String(format: "Section %ld End", section)
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_runtime_objc_get_meta_class</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>objc_getMetaClass(NSStringFromClass(&lt;#XXX#&gt;.class).UTF8String)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B9096F5-EA30-4D42-B656-F84E97814159</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>objc_getMetaClass(NSStringFromClass(XXX.class).UTF8String)</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】Runtime: 获取指定类的 MetaClass</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

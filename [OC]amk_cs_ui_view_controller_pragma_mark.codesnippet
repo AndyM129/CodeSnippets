@@ -24,11 +24,11 @@
     return self;
 }
 
-#pragma mark - Life Circle
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = self.view.backgroundColor?:[UIColor whiteColor];
+    self.view.backgroundColor = self.view.backgroundColor ?: [UIColor whiteColor];
     
 }
 
@@ -54,9 +54,7 @@
 
 #pragma mark - Layout Subviews
 
-#pragma mark - Public Methods
-
-#pragma mark - Private Methods
+#pragma mark - Action Methods
 
 #pragma mark - Notifications
 

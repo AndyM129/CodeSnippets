@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>声明一个数组</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】var array:Array&lt;Int&gt;</string>
+	<string>【Swift】var array: Array&lt;Int&gt;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

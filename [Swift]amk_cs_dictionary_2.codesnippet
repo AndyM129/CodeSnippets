@@ -9,7 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var &lt;#dict#&gt;:Dictionary&lt;&lt;#Int#&gt;,&lt;#String#&gt;&gt;</string>
+	<string>var &lt;#dict#&gt;: Dictionary&lt;&lt;#Int#&gt;,&lt;#String#&gt;&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>8B445247-A70D-4DE5-899C-D9A468A9177B</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>声明一个字典</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【Swift】var dict:Dictionary&lt;Int,String&gt;</string>
+	<string>【Swift】var dict: Dictionary&lt;Int,String&gt;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

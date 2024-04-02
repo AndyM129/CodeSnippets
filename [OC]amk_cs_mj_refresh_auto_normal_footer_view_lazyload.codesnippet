@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_mj_refresh_auto_normal_footer_view_lazyload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (MJRefreshAutoNormalFooter *)refreshFooterView {
+    if (!_refreshFooterView) {
+        _refreshFooterView = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(refreshFooterViewDidRefresh:)];
+        [_refreshFooterView setTitle:@"向上滑动加载更多" forState:MJRefreshStateIdle];
+        [_refreshFooterView setTitle:@"正在加载..." forState:MJRefreshStateRefreshing];
+        [_refreshFooterView setTitle:@"" forState:MJRefreshStateNoMoreData];
+    }
+    return _refreshFooterView;
+}
+
+- (void)refreshFooterViewDidRefresh:(id)sender {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E7D18052-AF9C-40E4-9FAB-A69DCDCD5FAC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (MJRefreshAutoNormalFooter *)refreshFooterView { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】MJRefresh： MJRefreshAutoNormalFooter 懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

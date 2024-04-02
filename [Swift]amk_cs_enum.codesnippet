@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>enum &lt;#name#&gt;&lt;#:type#&gt; {
+	<string>enum &lt;#name#&gt;&lt;#:type#&gt;, CaseIterable {
     case &lt;#xxx#&gt;
     case &lt;#yyy#&gt;
     case &lt;#zzz#&gt;

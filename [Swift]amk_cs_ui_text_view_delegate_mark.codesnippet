@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_text_view_delegate_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: UITextViewDelegate
+
+public func textViewShouldBeginEditing(_ textView: UITextView) -&gt; Bool {
+    return true
+}
+
+public func textViewShouldEndEditing(_ textView: UITextView) -&gt; Bool {
+    return true
+}
+
+public func textViewDidBeginEditing(_ textView: UITextView) {
+    print("\(#file.split(separator: "/").last!) \(#function) Line \(#line): ")
+}
+
+public func textViewDidEndEditing(_ textView: UITextView) {
+    print("\(#file.split(separator: "/").last!) \(#function) Line \(#line): ")
+}
+
+public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -&gt; Bool {
+    print("\(#file.split(separator: "/").last!) \(#function) Line \(#line): text=\(text)")
+    return true
+}
+
+public func textViewDidChange(_ textView: UITextView) {
+    print("\(#file.split(separator: "/").last!) \(#function) Line \(#line): textView.text=\(textView.text ?? "")")
+}
+
+public func textViewDidChangeSelection(_ textView: UITextView) {
+    print("\(#file.split(separator: "/").last!) \(#function) Line \(#line): ")
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D95AFE4B-F20E-4301-9E4A-B4C6BA8719CC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】UITextViewDelegate：代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
