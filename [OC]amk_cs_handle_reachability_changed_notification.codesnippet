@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_handle_reachability_changed_notification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)handleReachabilityChangedNotification:(NSNotification *)notification {
+    if (AFNetworkReachabilityManager.sharedManager.reachable) {
+        // 页面数据请求异常后，当恢复网络连接时，自动重试请求
+        // ...
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>65A0B5D2-C70E-45D8-A130-EF9D054965DE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (void)handleReachabilityChangedNotification:(NSNotification *)noti { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSNotification: 实现对网络状态变更的处理</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

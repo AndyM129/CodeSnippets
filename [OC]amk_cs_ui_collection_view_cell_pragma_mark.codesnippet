@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_collection_view_cell_pragma_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Init Methods
+
+- (void)dealloc {
+    
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundView = [UIView.alloc initWithFrame:self.bounds];
+        self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        //self.backgroundView.layer.cornerRadius = 12;
+        //self.backgroundView.layer.backgroundColor = HEXRGBCOLOR(0xF6F6F6).CGColor;
+        
+        self.selectedBackgroundView = [UIView.alloc initWithFrame:self.bounds];
+        self.selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        //self.selectedBackgroundView.layer.cornerRadius = self.backgroundView.layer.cornerRadius;
+        self.selectedBackgroundView.layer.backgroundColor = [UIColor colorWithWhite:0 alpha:.05].CGColor;
+        
+        [self customLayoutSubviews];
+    }
+    return self;
+}
+
+#pragma mark - Getters &amp; Setters
+
+- (void)setHighlighted:(BOOL)highlighted {
+    // 不调用父类实现，以避免点击时引发UI问题
+}
+
+- (void)setSelected:(BOOL)selected {
+    // 不调用父类实现，以避免点击时引发UI问题
+}
+
+#pragma mark - Data &amp; Networking
+
+#pragma mark - Layout Subviews
+
+- (void)customLayoutSubviews {
+    // Coding ...
+}
+
+//+ (BOOL)requiresConstraintBasedLayout {
+//    return YES;
+//}
+//
+//- (void)updateConstraints {
+//    // Coding ...
+//
+//    //according to apple super should be called at end of method
+//    [super updateConstraints];
+//}
+
+#pragma mark - Action Methods
+
+#pragma mark - Notifications
+
+#pragma mark - KVO
+
+#pragma mark - Protocol
+
+#pragma mark - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D59B91AD-9401-4A61-AA86-CF680E823974</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UICollectionViewCell: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

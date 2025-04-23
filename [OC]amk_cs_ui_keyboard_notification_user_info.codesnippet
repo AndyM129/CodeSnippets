@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_keyboard_notification_user_info</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CGRect keyboardFrameEnd = [notification.userInfo bde_CGRectForKey:UIKeyboardFrameEndUserInfoKey];
+NSTimeInterval animationDuration = [notification.userInfo bde_floatForKey:UIKeyboardAnimationDurationUserInfoKey];
+UIViewAnimationCurve animationCurve = [notification.userInfo bde_integerForKey:UIKeyboardAnimationCurveUserInfoKey];
+UIViewAnimationOptions options = animationCurve &lt;&lt; 16; // 需要转换成 UIViewAnimationOptions
+//[UIView animateWithDuration:animationDuration delay:0 options:options animations:^{
+//    self.contentView.bottom = keyboardFrameEnd.origin.y;
+//} completion:^(BOOL finished) {
+//
+//}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BF2FE858-7DFE-4EB5-AE23-EC46C53384B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIKeyboard: 调起/收起 时的参数</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

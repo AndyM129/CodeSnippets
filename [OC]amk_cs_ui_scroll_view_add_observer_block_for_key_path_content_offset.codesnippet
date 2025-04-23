@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_scroll_view_add_observer_block_for_key_path_content_offset</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.webView.scrollView addObserverBlockForKeyPath:@"contentOffset" block:^(UIScrollView * _Nonnull scrollView, NSNumber * oldVal, NSNumber * newVal) {
+    if (!CGPointEqualToPoint(newVal.CGPointValue, oldVal.CGPointValue)) {
+        &lt;#code#&gt;
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D1B3E86-A8F7-4361-BB88-D04BF1F076FB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIScrollView: 添加KVO - contentOffset</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

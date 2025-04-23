@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_flex_explorer_toolbar_alpha</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - @ANDY_DEBUG - 优化 FLEX 显示
+#if defined(DEBUG)
+#import &lt;FLEX/FLEX.h&gt;
+#import &lt;Aspects/Aspects.h&gt;
+
+@interface FLEXExplorerToolbar (WKNDEBUG) @end
+@implementation FLEXExplorerToolbar (WKNDEBUG)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        [FLEXExplorerToolbar aspect_hookSelector:@selector(initWithFrame:) withOptions:AspectPositionAfter usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {
+            FLEXExplorerToolbar *instance = aspectInfo.instance;
+            instance.alpha = 0.4;
+        } error:nil];
+    });
+}
+
+@end
+
+#endif
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>836BA150-8BA1-4EC0-8597-DFD1A39EE873</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】FLEX: 调低 FLEXExplorerToolbar 透明度，以弱化显示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

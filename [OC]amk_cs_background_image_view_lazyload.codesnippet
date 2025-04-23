@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_background_image_view_lazyload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIImageView *)backgroundImageView {
+    if (!_backgroundImageView) {
+        _backgroundImageView = [UIImageView.alloc init];
+        _iconImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _backgroundImageView.backgroundColor = UIColor.lightGrayColor;
+        [self.contentView insertSubview:_backgroundImageView atIndex:0];
+        
+        //[self.backgroundImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        //    make.top.bottom.mas_equalTo(self.contentView).inset(1);
+        //    make.right.mas_equalTo(self.contentView).inset(1);
+        //    make.width.mas_equalTo(188);
+        //}];
+    }
+    return _backgroundImageView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>990271DC-28F6-4582-BDDD-CDAB805EA5A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (UIImageView *)backgroundImageView { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIImageView: backgroundImageView 懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

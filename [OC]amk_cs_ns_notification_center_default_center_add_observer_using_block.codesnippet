@@ -3,23 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ns_notification_center_default_center_add_observer_using_block</string>
+	<string>amk_cs_ns_notification_center_default_add_observer_using_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>id __block token = [NSNotificationCenter.defaultCenter addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+	<string>id __block token = [NSNotificationCenter.defaultCenter addObserverForName:&lt;#name#&gt; object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull notification) {
     [NSNotificationCenter.defaultCenter removeObserver:token];
-    &lt;#code...#&gt;
-}];
-</string>
+    &lt;#code#&gt;
+}];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E70F97A6-AEDD-4AF3-85BF-DB6893C62697</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>[NSNotificationCenter.defaultCenter addObserverForName:name object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) { ... }</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>【OC】NSNotificationCenter: 用 block 添加通知的监听</string>
 	<key>IDECodeSnippetUserSnippet</key>

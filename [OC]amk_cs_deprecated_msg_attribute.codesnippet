@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DEPRECATED_MSG_ATTRIBUTE("&lt;#请使用 xxx 代替#&gt;")</string>
+	<string>DEPRECATED_MSG_ATTRIBUTE("该方法已废弃，请使用 &lt;#newMethod#&gt; 替代")</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4FC576F3-6529-4FA3-8BFE-F0D470FC6EF7</string>
 	<key>IDECodeSnippetLanguage</key>

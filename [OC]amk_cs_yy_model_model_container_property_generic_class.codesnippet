@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSDictionary *)modelContainerPropertyGenericClass {
+	<string>#pragma mark YYModel
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"&lt;#属性名#&gt;" : &lt;#属性对应的类#&gt;.class};
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

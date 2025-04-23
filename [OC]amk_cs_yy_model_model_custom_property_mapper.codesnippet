@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (NSDictionary *)modelCustomPropertyMapper {
+	<string>#pragma mark YYModel
+
++ (NSDictionary *)modelCustomPropertyMapper {
     return @{
         @"&lt;#propertyName#&gt;": @"&lt;#keyInJson#&gt;",
     };

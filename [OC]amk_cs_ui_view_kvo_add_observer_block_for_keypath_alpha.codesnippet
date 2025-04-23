@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_kvo_add_observer_block_for_keypath_alpha</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#view#&gt; addObserverBlockForKeyPath:@"alpha" block:^(UIView * _Nonnull view, NSNumber * _Nonnull oldVal, NSNumber * _Nonnull newVal) {
+    if (fabs(newVal.floatValue - oldVal.floatValue) &gt; 0.00001) { // 取差的绝对值 进行比较，避免精度问题
+        NSLog(@"");
+    }
+}];
+
+
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3EB2C39E-F829-4EE6-8470-AD5327D8B8A0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIView：添加KVO - alpha</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

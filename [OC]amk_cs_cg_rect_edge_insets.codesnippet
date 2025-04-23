@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_cg_rect_edge_insets</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static CGRect AMKCGRectEdgeInsets(CGRect rect, UIEdgeInsets edgeInsets) {
+    return CGRectMake((rect.origin.x + edgeInsets.left), (rect.origin.y + edgeInsets.top), (rect.size.width - edgeInsets.left - edgeInsets.right), (rect.size.height - edgeInsets.top - edgeInsets.bottom));
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9FF4942F-5991-42F1-9F5D-FB24D9B96934</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>static CGRect AMKCGRectEdgeInsets(CGRect rect, UIEdgeInsets edgeInsets) { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CGRect: AMKCGRectEdgeInsets 方法定义</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

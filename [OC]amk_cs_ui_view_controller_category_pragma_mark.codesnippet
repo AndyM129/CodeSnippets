@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_controller_category_pragma_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Dealloc
+
+//- (void)amkXxx_dealloc {}
+
+#pragma mark - Init Methods
+
+#pragma mark - Life Cycle
+
+//- (void)amkXxx_viewDidLoad {}
+
+//- (void)amkXxx_viewWillAppear:(BOOL)animated {}
+
+//- (void)amkXxx_viewDidAppear:(BOOL)animated {}
+
+//- (void)amkXxx_viewWillDisappear:(BOOL)animated {}
+
+//- (void)amkXxx_viewDidDisappear:(BOOL)animated {}
+
+#pragma mark - Getters &amp; Setters
+
+#pragma mark - Data &amp; Networking
+
+#pragma mark - Layout Subviews
+
+#pragma mark - Action Methods
+
+#pragma mark - Notifications
+
+#pragma mark - KVO
+
+#pragma mark - Protocol
+
+#pragma mark - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DE0BC1FA-E868-4391-9AAE-EFABEEBA0BFB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIViewController: 分类 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

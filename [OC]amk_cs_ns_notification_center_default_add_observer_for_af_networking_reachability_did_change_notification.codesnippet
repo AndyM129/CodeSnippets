@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_notification_center_default_add_observer_for_af_networking_reachability_did_change_notification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleReachabilityChangedNotification:) name:AFNetworkingReachabilityDidChangeNotification object:nil];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4C483251-366A-452E-94D3-DEBBBD395817</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleReachabilityChangedNotification:) name:AFNetworkingReachabilityDidChangeNotification object:nil];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSNotificationCenter: 添加网络状态的监听</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

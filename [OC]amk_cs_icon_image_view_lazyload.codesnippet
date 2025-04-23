@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_icon_image_view_lazyload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIImageView *)iconImageView {
+    if (!_iconImageView) {
+        _iconImageView = [UIImageView.alloc init];
+        _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _iconImageView.image = [UIImage imageWithColor:UIColor.lightGrayColor size:CGSizeMake(100, 100)];
+        [self addSubview:_iconImageView];
+        
+        //[self.iconImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        //    make.width.height.mas_equalTo(100);
+        //    make.left.mas_equalTo(self.contentView).inset(18);
+        //    make.centerY.mas_equalTo(self.contentView);
+        //}];
+    }
+    return _iconImageView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>083A1586-54DA-444B-8BCB-AD12A7223010</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (UIImageView *)iconImageView { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIImageView: iconImageView 懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

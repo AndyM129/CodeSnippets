@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>MIN(MAX(&lt;#a#&gt;, &lt;#value#&gt;), &lt;#b#&gt;)</string>
+	<string>MAX(&lt;#a#&gt;, MIN(&lt;#value#&gt;, &lt;#b#&gt;))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>16DC8A2A-B7E9-4024-855F-542E2FD073F4</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_label_line_break_mode_by_truncating_tail</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#label#&gt;.lineBreakMode = NSLineBreakByTruncatingTail;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D77DD850-3953-4D6A-AE5E-B27D6514495E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>label.lineBreakMode = NSLineBreakByTruncatingTail;</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UILabel: 指定截断模式 - abcd...</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

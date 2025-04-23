@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_button_lazyload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)button {
+    if (!_button) {
+        _button = [UIButton.alloc init];
+        _button.titleLabel.font = [UIFont systemFontOfSize:15];
+        [_button setImage:[UIImage imageWithColor:_button.tintColor size:CGSizeMake(25, 25)] forState:UIControlStateNormal];
+        [_button setImage:[UIImage imageWithColor:_button.tintColor size:CGSizeMake(25, 25)] forState:UIControlStateSelected];
+        [_button setTitle:@"Normal" forState:UIControlStateNormal];
+        [_button setTitle:@"Selected" forState:UIControlStateSelected];
+        [_button setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+        [_button setTitleColor:UIColor.redColor forState:UIControlStateSelected];
+        [_button setBackgroundImage:[UIImage imageWithColor:[_button.tintColor colorWithAlphaComponent:0.2]] forState:UIControlStateNormal];
+        [_button setBackgroundImage:[UIImage imageWithColor:[_button.tintColor colorWithAlphaComponent:0.3]] forState:UIControlStateSelected];
+        [self.contentView addSubview:_button];
+    }
+    return _button;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1326E382-A010-4C6E-91A9-74486CF7C02C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (UIButton *)button { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIButton: lazyload</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

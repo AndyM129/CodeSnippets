@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
+	<string>#pragma mark YYModel
+
+- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dict {
     return YES;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

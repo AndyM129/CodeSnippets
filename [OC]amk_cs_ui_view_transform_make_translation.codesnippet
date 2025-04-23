@@ -9,13 +9,15 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#view#&gt;.transform = CGAffineTransformMakeTranslation(25, 50);</string>
+	<string>&lt;#view#&gt;.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 25, 50);
+
+amk_cs_ui_view_transform_translation</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>43A389E0-6C86-4670-855C-8242655B7764</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>&lt;#view#&gt;.transform = CGAffineTransformMakeTranslation(25, 50);</string>
+	<string>&lt;#view#&gt;.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 25, 50);</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>【OC】UIView: 位移变换</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_layer_masked_corners_bottom</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#layer#&gt;.maskedCorners = kCALayerMinXMaxYCorner | kCALayerMaxXMaxYCorner;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>90CAAB22-7A95-4E0F-907D-02B14BBC15C3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>&lt;#layer#&gt;.maskedCorners = kCALayerMinXMaxYCorner | kCALayerMaxXMaxYCorner </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CALayer: 设置圆角位置 - 底部</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

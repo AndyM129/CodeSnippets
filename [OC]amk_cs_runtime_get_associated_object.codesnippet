@@ -6,7 +6,7 @@
 	<string>amk_cs_runtime_get_associated_object</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>objc_getAssociatedObject(self, @selector(&lt;#getter#&gt;));</string>

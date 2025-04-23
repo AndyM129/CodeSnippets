@@ -11,10 +11,20 @@
 	<key>IDECodeSnippetContents</key>
 	<string>NSString *string = @"文本......";
 NSMutableAttributedString *attributedText = [NSMutableAttributedString.alloc initWithString:string ?: @""];
-attributedText.yy_color = HEXRGBCOLOR(0x000000);
+attributedText.yy_color = UIColor.redColor;
 attributedText.yy_font = [UIFont systemFontOfSize:14];
 attributedText.yy_alignment = NSTextAlignmentCenter;
 attributedText.yy_paragraphSpacing = 5;
+
+//[attributedText appendAttributedString:({
+//    NSMutableAttributedString *attributedString = [NSMutableAttributedString.alloc initWithString:@"World"];
+//    attributedString.yy_color = UIColor.orangeColor;
+//    attributedString.yy_font = [UIFont systemFontOfSize:18];
+//    attributedString.yy_alignment = NSTextAlignmentCenter;
+//    attributedString.yy_paragraphSpacing = 5;
+//    attributedString;
+//})];
+
 //label.attributedText = attributedText;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>70ADCB36-8934-4CF3-B445-4CFD2A6344A4</string>

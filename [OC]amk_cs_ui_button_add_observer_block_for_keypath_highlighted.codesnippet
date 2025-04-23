@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ui_button_add_observer_block_for_keypath_highlighted</string>
+	<string>amk_cs_ui_button_kvo_add_observer_block_for_keypath_highlighted</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>

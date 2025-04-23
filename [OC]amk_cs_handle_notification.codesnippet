@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)handle&lt;#NotificationName#&gt;:(NSNotification *)noti {
+	<string>- (void)handle&lt;#NotificationName#&gt;:(NSNotification *)notification {
     NSLog(@"");
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

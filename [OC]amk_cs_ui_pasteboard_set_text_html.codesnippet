@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_pasteboard_set_text_html</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@implementation UIPasteboard (AMKConveniences)
+
+/// 同步的，将指定 纯文本、HTML富文本 写入剪贴板
+/// - Parameters:
+///   - text: 纯文本，若为空 则返回 `NO`
+///   - html: HTML富文本
+- (BOOL)amk_setText:(NSString *)text html:(NSString *)html {
+    if (!text.length) {
+        return NO;
+    }
+    
+    if (!html.length) {
+        [UIPasteboard.generalPasteboard setString:text];
+    } else {
+        [UIPasteboard.generalPasteboard setItems:@[@{@"public.utf8-plain-text": text}, @{@"public.html": html}]];
+    }
+    return YES;
+}
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F3FB9C0-B611-4F63-A563-1E7DB253F46C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (BOOL)amk_setText:(NSString *)text html:(NSString *)html；</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIPasteboard: 写入纯文本 和HTML富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

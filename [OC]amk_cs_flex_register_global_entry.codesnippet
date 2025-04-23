@@ -6,7 +6,7 @@
 	<string>amk_cs_flex_register_global_entry</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - @ANDY_DEBUG

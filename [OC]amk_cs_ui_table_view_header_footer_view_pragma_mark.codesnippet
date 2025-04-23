@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view_header_footer_view_pragma_mark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Init Methods
+
+- (void)dealloc {
+    
+}
+
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
+        [self customLayoutSubviews];
+    }
+    return self;
+}
+
+#pragma mark - Getters &amp; Setters
+
+#pragma mark - Data &amp; Networking
+
+#pragma mark - Layout Subviews
+
+- (void)customLayoutSubviews {
+    // code ...
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    // Clear subviews data ...
+}
+
+#pragma mark - Action Methods
+
+#pragma mark - Notifications
+
+#pragma mark - KVO
+
+#pragma mark - Protocol
+
+#pragma mark - Helper Methods
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9F060761-3014-47B5-BD16-05DE81A82D6E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>通过 -customLayoutSubviews 方法布局</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UITableViewHeaderFooterView: 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

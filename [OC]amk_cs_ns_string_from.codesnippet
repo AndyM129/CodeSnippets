@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ns_string_from</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//FOUNDATION_EXPORT NSString * _Nullable StringFrom&lt;#EnumType#&gt;(&lt;#EnumType#&gt; enumValue);
+NSString *StringFrom&lt;#EnumType#&gt;(&lt;#EnumType#&gt; &lt;#enumValue#&gt;) {
+    switch (&lt;#enumValue#&gt;) {
+        case &lt;#EnumValue#&gt;: return @"";
+        default: return [NSString stringWithFormat:@"未知(%ld)", &lt;#enumValue#&gt;];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>48A33C74-0BEB-453C-AFE0-2CC9A2C98952</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】NSObject: StringFromXxx(Type value);</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -6,7 +6,7 @@
 	<string>amk_cs_aspect_instance_hook_selector_with_after</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>NSError *error;

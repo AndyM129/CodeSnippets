@@ -6,7 +6,7 @@
 	<string>amk_cs_aspect_instance_hook_with_instead</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[&lt;#Class#&gt; aspect_hookSelector:@selector(&lt;#selector#&gt;) withOptions:AspectPositionInstead usingBlock:^(id&lt;AspectInfo&gt; aspectInfo) {

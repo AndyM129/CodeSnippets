@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ca_basic_animation_with_transform_rotation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 旋转动画
+CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+rotationAnimation.fromValue = [NSNumber numberWithFloat:0.0];
+rotationAnimation.toValue = [NSNumber numberWithFloat:-2 * M_PI];
+rotationAnimation.duration = 1.0; // 1秒
+rotationAnimation.repeatCount = HUGE_VALF;
+[rotationAnimation setAmk_animationDidStopBlock:^(CAAnimation * _Nullable animation, BOOL finished) {
+    [weakAnimationView removeFromSuperview];
+}];
+[animationView.layer addAnimation:rotationAnimation forKey:@"shakeAnimation"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C4EACDEC-5A9F-47E3-848C-0655F669038F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】CAAnimation: 旋转动画</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

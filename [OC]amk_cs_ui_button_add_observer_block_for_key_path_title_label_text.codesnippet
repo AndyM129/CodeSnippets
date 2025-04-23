@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_button_add_observer_block_for_key_path_title_label_text</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#button#&gt; addObserverBlockForKeyPath:@"titleLabel.text" block:^(UIButton *_Nonnull button, NSString * _Nonnull oldVal, NSString * _Nonnull newVal) {
+    if (![newVal isEqualToString:oldVal]) {
+        //[button layoutButtonWithEdgeInsetsStyle:BDEButtonEdgeInsetsStyleLeft imageTitleSpace:5];
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AD3D24A3-6DAF-4CD1-B23F-0E61CD509079</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[&lt;#button#&gt; addObserverBlockForKeyPath:@"titleLabel.text" block:^(UIButton *_Nonnull button, NSString * _Nonnull oldVal, NSString * _Nonnull newVal) { ... }];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIButton: 添加 KVO - titleLabel.text</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

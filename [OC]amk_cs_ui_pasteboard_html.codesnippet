@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_pasteboard_html</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//@interface UIPasteboard (AMKConveniences)
+//
+///// 同步的，读取剪贴板中的 HTML富文本
+//@property (nonatomic, copy, readonly, nullable) NSString *amk_html;
+//
+//@end
+
+@implementation UIPasteboard (AMKConveniences)
+
+- (NSString *)amk_html {
+    __block NSString *html = nil;
+    [self.items enumerateObjectsUsingBlock:^(NSDictionary&lt;NSString *, id&gt; * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
+        html = [item bde_stringForKey:@"public.html"];
+        
+        if (html.length) {
+            *stop = YES;
+        }
+    }];
+    return html;
+}
+
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3BBC532-E3BB-4DD1-AA75-706DB93C8405</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (NSString *)amk_html；</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIPasteboard: 读取 HTML 富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

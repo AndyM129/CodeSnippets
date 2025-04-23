@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_ca_transaction_set_disable_actions</string>
+	<string>amk_cs_ns_notification_center_default_add_observer_for_ui_keyboard_did_show_notification</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[CATransaction begin];
-[CATransaction setDisableActions:YES];
-[self updateConstraints];
-[CATransaction commit];</string>
+	<string>[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleKeyboardDidShowNotification:) name:UIKeyboardDidShowNotification object:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4C5FC6BE-6845-4D72-B15F-32C535991B4E</string>
+	<string>CDDF62E9-1863-4839-88D0-980E51FB21A2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>[NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleKeyboardDidShowNotification:) name:UIKeyboardDidShowNotification object:nil];</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>【OC】CALayer：禁用隐式动画</string>
+	<string>【OC】NSNotificationCenter: 添加键盘通知的监听 - UIKeyboardDidShowNotification</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>amk_cs_static_void_context</string>
+	<string>amk_cs_kvo_static_void_context</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>static void * &lt;#Custom#&gt;Context = &amp;&lt;#Custom#&gt;Context;</string>

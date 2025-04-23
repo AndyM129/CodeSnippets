@@ -9,15 +9,17 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 处理一些默认值、缺失值的情况
-- (NSDictionary *)modelCustomWillTransformFromDictionary:(NSMutableDictionary *)dic {
-    if (![dic isKindOfClass:NSMutableDictionary.class]) {
-        dic = [dic isKindOfClass:NSDictionary.class] ? [dic mutableCopy] : nil;
+	<string>#pragma mark YYModel
+
+// 处理一些默认值、缺失值的情况
+- (NSDictionary *)modelCustomWillTransformFromDictionary:(NSMutableDictionary *)dict {
+    if (![dict isKindOfClass:NSMutableDictionary.class]) {
+        dict = [dic isKindOfClass:NSDictionary.class] ? [dict mutableCopy] : nil;
     }
     
     &lt;#code...#&gt;
 
-    return dic;
+    return dict;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>793EB6E6-0285-42A8-9BF5-DAD23F20A7E2</string>

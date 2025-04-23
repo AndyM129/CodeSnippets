@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_title_label_lazyload</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [UILabel.alloc init];
+        _titleLabel.numberOfLines = 0;
+        _titleLabel.font = [UIFont systemFontOfSize:16 weight:500];
+        _titleLabel.textAlignment = NSTextAlignmentLeft;
+        _titleLabel.textColor = UIColor.blackColor;
+        _titleLabel.text = @"标题Xxx";
+        [self.contentView addSubview:_titleLabel];
+        
+        //[self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        //    make.left.mas_equalTo(self.contentView).inset(18);
+        //    make.right.mas_equalTo(self.uploadButton.mas_left).offset(-10);
+        //    make.top.mas_equalTo(self.contentView).inset(16);
+        //}];
+    }
+    return _titleLabel;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A696B410-6173-4714-B933-F186EA6F34A0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>- (UILabel *)titleLabel { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UILabel: titleLabel 懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

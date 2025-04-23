@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_button_kvo_add_observer_block_for_keypath_selected</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#button#&gt; addObserverBlockForKeyPath:@"selected" block:^(UIButton * _Nonnull button, NSNumber * _Nonnull oldVal, NSNumber * _Nonnull newVal) {
+    if (newVal.boolValue != oldVal.boolValue) {
+        // code...
+    }
+}];
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D083CE90-A9C0-44C3-9ED0-32E98377BCAC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[&lt;#button#&gt; addObserverBlockForKeyPath:@"selected" block: ...</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIButton: 添加 KVO - selected</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

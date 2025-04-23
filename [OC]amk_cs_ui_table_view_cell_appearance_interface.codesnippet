@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_table_view_cell_appearance_interface</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark -
+
+@interface XxxTableViewCell (CPAppearance)
+//@property (nonatomic, assign, readonly, class) CGFloat preferredHeight;
++ (CGFloat)tableView:(UITableView *_Nullable)tableView heightForRowAtIndexPath:(NSIndexPath *_Nullable)indexPath withParams:(NSDictionary *_Nullable)params;
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3CEB9AAE-8B2C-4F28-972C-803104BD0D58</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>@interface XxxTableViewCell (Appearance) ... @end</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UITableViewCell: UI配置相关分类 代码框架</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

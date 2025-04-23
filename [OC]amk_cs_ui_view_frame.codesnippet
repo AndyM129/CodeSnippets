@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_frame</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#view#&gt;.frame = ({
+    CGRect frame = CGRectZero;
+    frame.size.width = MainScreenWidth;
+    frame.size.height = 130;
+    frame.origin.x = 0;
+    frame.origin.y = view.bottom - frame.size.height;
+    frame;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B9725763-64F4-4250-8137-2EF1F90072B0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>view.frame = ({ ... });</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIVIew: 计算 frame</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -6,7 +6,7 @@
 	<string>amk_cs_ui_view_pragma_mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Init Methods

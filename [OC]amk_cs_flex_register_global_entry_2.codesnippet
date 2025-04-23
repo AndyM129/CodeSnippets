@@ -6,7 +6,7 @@
 	<string>amk_cs_flex_manager_register_global_entry</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>[FLEXManager.sharedManager registerGlobalEntryWithName:@"&lt;#标题#&gt;" viewControllerFutureBlock:^UIViewController * _Nonnull{

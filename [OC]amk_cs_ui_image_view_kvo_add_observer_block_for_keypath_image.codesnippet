@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_image_view_kvo_add_observer_block_for_keypath_image</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#imageView#&gt; addObserverBlockForKeyPath:@"image" block:^(UIImageView * _Nonnull coverImageView, UIImage * _Nonnull oldVal, UIImage * _Nonnull newVal) {
+    if (newVal != oldVal) {
+        // code...
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8EAC6A0C-7A1F-40A6-AEAB-E6B5FCC2E050</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[&lt;#imageView#&gt; addObserverBlockForKeyPath:@"image" block:^(UIImageView * _Nonnull coverImageView, UIImage * _Nonnull oldVal, UIImage * _Nonnull newVal) { ... }];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIImageView: 添加KVO - image</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

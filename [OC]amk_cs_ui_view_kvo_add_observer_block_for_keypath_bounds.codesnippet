@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>amk_cs_ui_view_kvo_add_observer_block_for_keypath_bounds</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#view#&gt; addObserverBlockForKeyPath:@"bounds" block:^(UIView * _Nonnull view, NSValue *oldVal, NSValue *newVal) {
+    if (![newVal isEqualToValue:oldVal]) {
+        &lt;#code#&gt;
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>68EE3018-F148-496B-BF32-704B1A6FC853</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>[&lt;#view#&gt; addObserverBlockForKeyPath:@"bounds" block:^(UIView * _Nonnull view, NSNumber * _Nonnull oldVal, NSNumber * _Nonnull newVal) { ... }];</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【OC】UIView: 添加KVO - bounds</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

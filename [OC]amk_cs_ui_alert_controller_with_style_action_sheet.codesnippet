@@ -12,6 +12,11 @@
 	<string>NSString *title = @"标题";
 NSString *message = @"文本描述";
 UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+//[alertController setValue:[NSAttributedString.alloc initWithString:message attributes:({
+//    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle.alloc init];
+//    paragraphStyle.alignment = NSTextAlignmentLeft;
+//    @{NSFontAttributeName: [UIFont systemFontOfSize:10], NSParagraphStyleAttributeName: paragraphStyle};
+//})] forKey:@"attributedMessage"];
 [alertController addAction:[UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     NSLog(@"%@", action.title);
 }]];
